@@ -1,0 +1,590 @@
+body{
+	margin: 0px;
+}
+
+/*PC*/
+@media (width > 1024px) {
+
+
+	.section01 {
+		background-color: #fff;
+		/*background-image: linear-gradient(to top, white 50%, src 50%);*/
+		width: 100%;
+		height: 750px; /* 화면 전체 높이 기준 */
+		background-image: url('/common/medivis/img/marketing/bg.png');
+		background-size: 100% 50%; /* 가로 50%, 세로 100% */
+		background-repeat: no-repeat; /* 반복 방지 */
+		background-position: bottom; /* 왼쪽 또는 right로 설정 가능 */
+	}
+
+	.section01 > .section01_01 {
+		width: 100%;
+		height: 450px;
+		background-color: #fff;
+	}
+
+	.section01 > .section01_01 > .title {
+		color: #000;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: auto;
+		position: relative;
+		top: 300px;
+	}
+	.section01 > .section01_01 > .section01_01_div {
+		max-width: 1440px;
+		width: 100%;
+		margin: auto;
+		border-radius: 30px;
+		background: #F1F5FA;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.section01 > .section01_01 > .section01_01_div > .context {
+		color: #0A0A0A;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+	}
+
+	.section02 {
+		background-color: #fff;
+		/*background-image: linear-gradient(to top, white 50%, src 50%);*/
+		width: 100%;
+		height: 650px; /* 화면 전체 높이 기준 */
+		background-image: url('/common/medivis/img/marketing/bg.png');
+		background-size: 100% 60%; /* 가로 50%, 세로 100% */
+		background-repeat: no-repeat; /* 반복 방지 */
+		background-position: bottom; /* 왼쪽 또는 right로 설정 가능 */
+	}
+
+	.section02 > .section02_02 {
+		max-width: 1440px;
+		width: 100%;
+		height: 600px;
+		margin: auto;
+	}
+
+	.section02 > .section02_02 >  div{
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		position: relative;
+		bottom: 70px;
+		float: left;
+		max-width: 334px;
+        width: 22%;
+	}
+
+	.section02 > .section02_02 >  div > img{
+		width: 100%;
+	}
+
+	.c_title {
+		color: #FFF; 
+		text-align: center; 
+		font-family: Pretendard; 
+		font-size: 32px; 
+		font-style: normal; 
+		font-weight: 700; 
+		line-height: normal;
+		position: relative;
+	    bottom: 60px;
+	}
+
+	.section02 > .section02_02 >  div:nth-child(3){
+		margin-left: 30px;
+	}
+
+	.section02 > .section02_02 >  div:nth-child(2), .section02 > .section02_02 >  div:nth-child(4) {
+		margin-left: 30px;
+		top: 60px;
+	}
+
+	.section02 > .section02_02 > .section02_01_div {
+		float: left;
+		width: 500px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div {
+		float: right;
+		width: 810px;
+		text-align: left;
+
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .title {
+		margin-top: 196px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px; /* 89.474% */
+		letter-spacing: 0.38px;
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .sub_title {
+		margin-top: 20px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 34px; /* 121.429% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .context {
+		margin-top: 30px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .swiper-container {
+		width: 100%; /* 또는 원하는 고정 크기 */
+		overflow: hidden; /* 영역 밖 콘텐츠 숨김 */
+		position: relative; /* 자식 요소 위치 기준 */
+	}
+
+
+	.swiper-pagination-bullet-active{
+		width: 30px;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #0076FA !important;
+	}
+	.swiper-pagination-bullet{
+		background-color: #fff;
+		opacity: 1;
+	}
+
+	.swiper-slide {
+		border-radius: 30px;
+	}
+
+	.swiper-slide > img{
+		width: 100%;
+	}
+
+
+
+}
+
+
+
+
+
+
+/********************************************************************************/
+
+
+/*테블릿*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+	.section01 {
+		width: 100%;
+		height: 700px;
+	}
+
+	.section01 > .section01_01 {
+		width: 100%;
+		height: 450px;
+		background-color: #fff;
+	}
+
+	.section01 > .section01_01 > .title {
+		color: #000;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: auto;
+		position: relative;
+		top: 300px;
+	}
+	.section01 > .section01_01 > .section01_01_div {
+		max-width: 1000px;
+		width: 95%;
+		margin: auto;
+		border-radius: 30px;
+		background: #F1F5FA;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.section01 > .section01_01 > .section01_01_div > .context {
+		color: #0A0A0A;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+	}
+
+	.section02 {
+		background-color: #fff;
+		/*background-image: linear-gradient(to top, white 50%, src 50%);*/
+		width: 100%;
+		height: 1500px; /* 화면 전체 높이 기준 */
+		background-image: url('/common/medivis/img/marketing/bg.png');
+		background-size: 100% 50%; /* 가로 50%, 세로 100% */
+		background-repeat: no-repeat; /* 반복 방지 */
+		background-position: bottom; /* 왼쪽 또는 right로 설정 가능 */
+	}
+
+	.section02 > .section02_02 {
+		width: 1000px;
+		height: 500px;
+		margin: auto;
+	}
+
+	.section02 > .section02_02 > .section02_01_div {
+		float: left;
+		width: 400px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div {
+		float: right;
+		width: 610px;
+		text-align: left;
+
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .title {
+		margin-top: 196px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px; /* 89.474% */
+		letter-spacing: 0.38px;
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .sub_title {
+		margin-top: 20px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 34px; /* 121.429% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .context {
+		margin-top: 30px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .swiper-container {
+		width: 100%; /* 또는 원하는 고정 크기 */
+		overflow: hidden; /* 영역 밖 콘텐츠 숨김 */
+		position: relative; /* 자식 요소 위치 기준 */
+	}
+
+
+	.swiper-pagination-bullet-active{
+		width: 30px;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #0076FA !important;
+	}
+	.swiper-pagination-bullet{
+		background-color: #fff;
+		opacity: 1;
+	}
+
+	.swiper-slide {
+		border-radius: 30px;
+	}
+
+	.swiper-slide > img{
+		width: 100%;
+	}
+
+
+	.section02 > .section02_02 {
+		width: 100%;
+		/*height: 600px;*/
+		margin: auto;
+	}
+
+	.section02 > .section02_02 >  div{
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		position: relative;
+		bottom: 70px;
+		float: left;
+	}
+
+	.section02 > .section02_02 >  div > img {
+		width: 100%;
+	}
+
+	.section02 > .section02_02 >  div {
+		width: 48%;
+	}
+
+	.c_title {
+		color: #FFF; 
+		text-align: center; 
+		font-family: Pretendard; 
+		font-size: 32px; 
+		font-style: normal; 
+		font-weight: 700; 
+		line-height: normal;
+		position: relative;
+	    bottom: 60px;
+	}
+
+	.section02 > .section02_02 >  div:nth-child(3){
+		/*margin-left: 30px;*/
+	}
+
+	.section02 > .section02_02 >  div:nth-child(2), .section02 > .section02_02 >  div:nth-child(4) {
+		margin-left: 30px;
+		top: 60px;
+	}
+
+
+
+}
+
+
+
+
+
+/********************************************************************************/
+
+
+@media (max-width: 768px) {  /* 모바일 */
+	.section01 {
+		width: 100%;
+		/*height: 620px;*/
+	}
+
+	.section01 > .section01_01 {
+		width: 100%;
+		height: 350px;
+		background-color: #fff;
+	}
+
+	.section01 > .section01_01 > .title {
+		color: #000;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: auto;
+		position: relative;
+		top: 220px;
+	}
+	.section01 > .section01_01 > .section01_01_div {
+		width: 92%;
+        margin: auto;
+        border-radius: 30px;
+        background: #F1F5FA;
+        padding-top: 35px;
+        padding-bottom: 35px;
+        padding-left: 10px;
+        padding-right: 10px;
+	}
+	.section01 > .section01_01 > .section01_01_div > .context {
+		color: #0A0A0A;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+	}
+
+	.section02 {
+		background-color: #fff;
+		/*background-image: linear-gradient(to top, white 50%, src 50%);*/
+		width: 100%;
+		height: 2100px; /* 화면 전체 높이 기준 */
+		background-image: url('/common/medivis/img/marketing/bg.png');
+		background-size: 100% 50%; /* 가로 50%, 세로 100% */
+		background-repeat: no-repeat; /* 반복 방지 */
+		background-position: bottom; /* 왼쪽 또는 right로 설정 가능 */
+	}
+
+	.section02 > .section02_02 {
+		width: 100%;
+		height: 630px;
+		margin: auto;
+	}
+
+	.section02 > .section02_02 > .section02_01_div {
+		float: left;
+		width: 400px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div {
+		float: right;
+		width: 610px;
+		text-align: left;
+
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .title {
+		margin-top: 196px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px; /* 89.474% */
+		letter-spacing: 0.38px;
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .sub_title {
+		margin-top: 20px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 34px; /* 121.429% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .context {
+		margin-top: 30px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .swiper-container {
+		width: 100%; /* 또는 원하는 고정 크기 */
+		overflow: hidden; /* 영역 밖 콘텐츠 숨김 */
+		position: relative; /* 자식 요소 위치 기준 */
+	}
+
+
+	.swiper-pagination-bullet-active{
+		width: 30px;
+		display: inline-block;
+		border-radius: 10px;
+		background-color: #0076FA !important;
+	}
+	.swiper-pagination-bullet{
+		background-color: #fff;
+		opacity: 1;
+	}
+
+	.swiper-slide {
+		border-radius: 30px;
+	}
+
+	.swiper-slide > img{
+		width: 100%;
+	}
+
+
+	.section02 > .section02_02 {
+		width: 90%;
+		height: 600px;
+		margin: auto;
+	}
+
+	.section02 > .section02_02 >  div{
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 32px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		position: relative;
+		bottom: 70px;
+		/*float: left;*/
+	}
+
+	.c_title {
+		color: #FFF; 
+		text-align: center; 
+		font-family: Pretendard; 
+		font-size: 32px; 
+		font-style: normal; 
+		font-weight: 700; 
+		line-height: normal;
+		position: relative;
+	    bottom: 60px;
+	}
+
+	.section02 > .section02_02 >  div:nth-child(3){
+		
+	}
+
+	.section02 > .section02_02 >  div:nth-child(3){
+		/*margin-left: 30px;*/
+	}
+
+	.section02 > .section02_02 >  div:nth-child(2), .section02 > .section02_02 >  div:nth-child(4) {
+		/*margin-left: 30px;*/
+		/*top: 60px;*/
+	}
+
+
+}

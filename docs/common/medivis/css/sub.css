@@ -1,0 +1,414 @@
+body{
+	margin: 0px;
+}
+
+/*PC*/
+@media (width > 1024px) {
+	.clear {
+		clear: both;
+	}
+
+	.fl_left {
+		float: left;
+	}
+
+	.fl_right {
+		float: right;
+	}
+
+
+	footer {
+		max-width: 1920px;
+		/*max-width: 1440px;*/
+		/*min-width: 1025px;*/
+		width: 100%;
+		background: #002E57;
+		padding-top: 90px;
+		padding-bottom: 90px;
+		position: absolute;
+	}
+
+	footer > .container {
+		max-width: 1440px;
+		width: 100%;
+		margin: auto;
+	}
+
+	footer > .container > .header{
+		height: 55px;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 30px;
+	}
+
+	footer > .container > .header > .title {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 46px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 1.84px;
+		/*text-transform: capitalize;*/
+	}
+
+	footer > .container > .header > .fMenu > ul {
+		list-style: none;
+		padding: 0px;
+	}
+
+	footer > .container > .header > .fMenu > ul > li {
+		padding-left: 40px;
+		text-align: right;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	footer > .container > .body > ul {
+		list-style: none;
+		padding: 0px;
+		height: 24px;
+	}
+
+	footer > .container > .body > ul > li {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	.pr30 {
+		padding-right: 30px;
+	}
+	.pr15 {
+		padding-right: 15px;
+	}
+
+	footer > .container > .footer > ul {
+		list-style: none;
+		padding: 0px;
+		height: 20px;
+	}
+
+	footer > .container > .footer > ul > li {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+}
+
+
+
+
+
+
+/********************************************************************************/
+
+
+/*테블릿*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+
+	.mt145{
+		margin-top: 145px;
+	}
+
+	.mt45{
+		margin-top: 45px;
+	}
+
+	.mt80{
+		margin-top: 80px;
+	}
+
+	.ml50 {
+		margin-left: 50px;
+	}
+
+	.mt30 {
+		margin-top: 30px;
+	}
+
+	.mt15 {
+		margin-top: 15px;
+	}
+	.mt10 {
+		margin-top: 10px;
+	}
+
+
+	.clear {
+		clear: both;
+	}
+
+	.fl_left {
+		float: left;
+	}
+
+	.fl_right {
+		float: right;
+	}
+
+
+
+	.w145 {
+		width: 145px;
+	}
+
+	.w200 {
+		width: 200px;
+	}
+
+	footer {
+		background: #002E57;
+		padding-top: 90px;
+		padding-bottom: 90px;
+	}
+
+	footer > .container {
+		width: 100%;
+		margin: auto;
+		max-width: 1023px;
+	}
+
+	footer > .container > .header{
+		height: 55px;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 30px;
+	}
+
+	footer > .container > .header > .title {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 5vw;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 1.84px;
+		/*text-transform: capitalize;*/
+	}
+
+	footer > .container > .header > .fMenu > ul {
+		list-style: none;
+		padding: 0px;
+	}
+
+	footer > .container > .header > .fMenu > ul > li {
+		padding-left: 40px;
+		text-align: right;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	footer > .container > .body > ul {
+		list-style: none;
+		padding: 0px;
+		height: 24px;
+	}
+
+	footer > .container > .body > ul > li {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	.pr30 {
+		padding-right: 30px;
+	}
+	.pr15 {
+		padding-right: 15px;
+	}
+
+	footer > .container > .footer > ul {
+		list-style: none;
+		padding: 0px;
+		height: 20px;
+	}
+
+	footer > .container > .footer > ul > li {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+
+}
+
+
+
+
+
+/********************************************************************************/
+
+
+@media (max-width: 768px) {  /* 모바일 */
+
+	.mt145{
+		margin-top: 45px;
+	}
+
+	.mt45{
+		margin-top: 45px;
+	}
+
+	.mt80{
+		margin-top: 45px;
+	}
+
+	.ml50 {
+		margin-left: 0px;
+	}
+
+	.mt30 {
+		margin-top: 30px;
+		padding-left: 15px;
+	}
+
+	.mt15 {
+		margin-top: 15px;
+	}
+	.mt10 {
+		margin-top: 10px;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	.fl_left {
+		float: left;
+	}
+
+	.fl_right {
+		float: left;
+	}
+
+	.act{
+		background: linear-gradient(180deg, #96C1FE 0%, #2168FB 100%);
+	}
+
+	.nAct{
+		background-color: transparent;
+		border: 2px solid #fff;
+	}
+
+	.w145 {
+		width: 145px;
+	}
+
+	.w200 {
+		width: 200px;
+	}
+
+	footer {
+		background: #002E57;
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+
+	footer > .container {
+		width: 100%;
+		margin: auto;
+	}
+
+	footer > .container > .header{
+		height: 55px;
+		border-bottom: 1px solid #fff;
+		padding-bottom: 50px;
+	}
+
+	footer > .container > .header > .title {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 46px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		letter-spacing: 1.84px;
+		/*text-transform: capitalize;*/
+		padding-left: 15px;
+	}
+
+	footer > .container > .header > .fMenu > ul {
+		list-style: none;
+		padding: 0px;
+	}
+
+	footer > .container > .header > .fMenu > ul > li {
+		padding-left: 15px;
+		text-align: left;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 15px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	footer > .container > .body > ul {
+		list-style: none;
+		padding: 0px;
+		height: 24px;
+	}
+
+	footer > .container > .body > ul > li {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		text-transform: uppercase;
+		cursor: pointer;
+	}
+
+	.pr30 {
+		padding-right: 30px;
+	}
+	.pr15 {
+		padding-right: 15px;
+	}
+
+	footer > .container > .footer > ul {
+		list-style: none;
+		padding: 0px;
+		height: 20px;
+	}
+
+	footer > .container > .footer > ul > li {
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+	}
+}

@@ -1,0 +1,231 @@
+<head>
+	<meta charset="utf-8">
+
+	<link rel="icon" href="/uploads/favicon/1769137000724_favicon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#000000">
+	<meta name="description" content="medical device manufacturers with regional distributors and customers worldwide,medical device manufacturers, medivis">
+	<link rel="apple-touch-icon" href="/logo192.png">
+
+	<link rel="stylesheet" as="style" crossorigin="" href="/common/medivis/css/pretendardvariable.css" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+	<title>MEDIVIS</title>
+
+	<!-- jQuery 3 -->
+	<script src="/common/admin/js/jquery-1.12.4.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="/common/medivis/js/common.js?v=1"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/browser/overlayscrollbars.browser.es6.min.js" crossorigin="anonymous"></script>
+
+			<link rel="stylesheet" href="/common/medivis/css/layout.css?date=20260205" />
+		<link rel="stylesheet" href="/common/medivis/css/sub.css?date=20260205" />
+		<link rel="stylesheet" href="/common/medivis/css/submenu.css?date=20260205" />
+	
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+<header>
+
+	<menu>
+		<div id="logo" onclick="location.href='/'" >MEDIVIS</div>
+		<ul>
+			<li><span >About Us</span></li>
+			<li><span >Business</span></li>
+			<li><span class="active">Product</span></li>
+			<li><span >Contact Us</span></li>
+		</ul>
+		<div class="men">
+			<input id="menu-btn" type="checkbox" />
+			<div for="menu-btn" class="hMenu" >
+				<label for="menu-btn" class="">
+					menu
+					<div class="hMenuSub"></div>
+				</label>
+			</div>
+		</div>
+
+		<div class="subMenu">
+			<ul>
+				<li>About Us</li>
+				<li onclick="location.href='/medivis/about'">Company Overview</li>
+				<li onclick="location.href='/medivis/marketing'">Target Markets</li>
+				<li onclick="location.href='/medivis/mission'">Mission & Values</li>
+			</ul>
+			<ul>
+				<li>Business</li>
+				<li onclick="location.href='/medivis/today'">Our Role Today</li>
+				<li onclick="location.href='/medivis/partners'">Partners</li>
+			</ul>
+			<ul>
+				<li>Product</li>
+				<li onclick="location.href='/medivis/product/xray'">X-Ray</li>
+				<li onclick="location.href='/medivis/product/endoscopy'">Endoscopy</li>
+			</ul>
+			<ul>
+				<li>Contact Us</li>
+				<li onclick="location.href='/medivis/inquiry'">Inquiry</li>
+				<li onclick="location.href='/medivis/location'">Office Locations</li>
+			</ul>
+		</div>
+	</menu>
+</header>
+<div class="subMenuMobile">
+	<ul>
+		<li class="title">About Us</li>
+		<li onclick="location.href='/medivis/about'">Company Overview</li>
+		<li onclick="location.href='/medivis/marketing'">Target Markets</li>
+		<li onclick="location.href='/medivis/mission'">Mission & Values</li>
+		<li class="title">Business</li>
+		<li onclick="location.href='/medivis/today'">Our Role Today</li>
+		<li onclick="location.href='/medivis/partners'">Partners</li>
+		<li class="title">Product</li>
+		<li onclick="location.href='/medivis/product/xray'">X-Ray</li>
+		<li onclick="location.href='/medivis/product/endoscopy'">Endoscopy</li>
+		<li class="title">Contact Us</li>
+		<li onclick="location.href='/medivis/inquiry'">Inquiry</li>
+		<li onclick="location.href='/medivis/location'">Office Locations</li>
+	</ul>
+
+</div>
+
+<script>
+	$(document).ready(function() {
+		document.querySelector(".hMenu").addEventListener("click", (e) => {
+			console.log(e.target);
+			e.target.classList.toggle("menu-on");
+			document.querySelector(".subMenuMobile").classList.toggle("menu-on");
+		});
+	})
+</script>
+
+
+	<link rel="stylesheet" href="/common/medivis/css/view.css?date=20260126" />
+<style>
+.listBtn {
+	width: 160px; 
+	height: 60px; 
+	flex-direction: column; 
+	justify-content: center; 
+	align-items: center; 
+	gap: 10px;
+	border-radius: 8px;
+	background: #094E97;
+	color: var(--white-ffffff, #FFF);
+	font-family: Pretendard;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 500;
+	letter-spacing: -0.2px;
+	border: 0px;
+	cursor: pointer;
+}
+
+.moveBtn{
+	display: flex; 
+	width: 60px; 
+	height: 60px; 
+	gap: 10px; 
+	color: #094E97; 
+	padding: 20px 25px 21px 26px; 
+	border-radius: 8px; 
+	border: 1px solid #094E97; 
+	background: #FFF;
+	cursor: pointer;
+}
+
+.moveBtn_disabled {
+	cursor: default;
+}
+</style>
+<main>
+	<div class="section01 clear" >
+		<div class="section01_01">
+			<div class="section01_01_div">
+				
+			</div>
+			<div class="section01_02_div" style="clear: both; ">
+				<p><img alt="" src="/uploads/product_board/1772080943857_aaa.png" style="height:4986px; width:900px" /></p>
+
+				<div style="width: 300px; margin: auto; margin-bottom: 100px;">
+					<table style="width: 100%;">
+						<tr>
+														<td style="text-align: center;">
+								<button class="listBtn" onclick="location.href='/medivis/product/xray'">
+									 Back to List
+								</button>
+							</td>
+													</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</main>
+
+<script>
+	$(document).ready(function() {
+
+	})
+
+
+</script>
+
+	<footer>
+	<div class="container">
+		<div class="header">
+			<div class="title fl_left">MEDIVIS</div>
+			<div class="fMenu fl_right">
+				<ul>
+					<li class="fl_left" onclick="location.href='/medivis/about'">ABOUT US</li>
+					<li class="fl_left" onclick="location.href='/medivis/today'">BUSINESS</li>
+					<li class="fl_left" onclick="location.href='/medivis/about'">PRODUCT</li>
+					<li class="fl_left" onclick="location.href='/medivis/inquiry'">CONTACT US</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="body mt30">
+			<ul>
+				<li class="fl_left pr15" onclick="location.href='/medivis/policy/privacy'">PRIVACY POLICY</li>
+				<li class="fl_left pr15">|</li>
+				<li class="fl_left" onclick="location.href='/medivis/policy/termsuse'">TERTMS OF USE</li>
+			</ul>
+		</div>
+
+		<div class="footer mt30">
+			<ul class="clear mt10">
+				<li class="fl_left pr15">Business Name : MEDIVIS</li>
+				<li class="fl_left pr15">|</li>
+				<li class="fl_left pr15">CEO : HYUN SUB CHUNG</li>
+				<li class="fl_left pr15">|</li>
+				<li class="fl_left">E-mail : info@medivis.co.kr</li>
+			</ul>
+			<ul class="clear mt10">
+				<li class="fl_left pr15">Address : Bldg. B, Suite 908, 19 Cheongcho-ro, Deogyang-gu, Goyang-si, Gyeonggi-do, 10542, Republic of Korea (IS Biz Tower Central Phase 2)</li>
+			</ul>
+			<ul class="clear mt10">
+				<li class="fl_left pr15">Copyright © 2026 MEDIVIS Inc. CORPORATION All rights reserved.</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+<script>
+function showMore(){
+
+}
+</script>
+</body>
+
+
+</html>

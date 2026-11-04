@@ -1,0 +1,35 @@
+# MEDIVIS 홈페이지 (medivis.co.kr): 정적 사이트
+
+미담기획 호스팅(스마일서브 서버, 월 33,000원)을 끝내고 **GitHub Pages(무료)**로 옮기기 위한 저장소입니다.
+2026-11-04에 실제 사이트(www.medivis.co.kr)를 그대로 복사해 정적 HTML로 바꿨습니다.
+
+- `docs/`: 공개되는 사이트 전체 (GitHub Pages가 이 폴더를 그대로 서비스함)
+- `tools/mirror.js`: 실제 사이트를 `docs/`로 복사 (**최초 1회용**: 다시 돌리면 `docs/`에서 고친 내용을 덮어씀)
+- `tools/postprocess.js`: 복사본을 정적 사이트로 바꿈 (CSRF 토큰 제거, 문의 폼을 FormSubmit으로 연결, CNAME·404 추가)
+- `tools/serve.js`: 로컬 미리보기 `node tools/serve.js` → http://localhost:8090
+- `mirror-log.txt`: 복사할 때 받은 URL과 응답코드 (`/logo192.png`, `bg_section01.png`, `/a`는 실제 사이트에서도 404였음)
+
+## 바뀐 점
+- **관리자 화면(/common/admin)이 없습니다.** 내용을 고치려면 `docs/` 안의 HTML을 직접 수정한 뒤 commit/push 합니다.
+- **문의하기 폼**은 FormSubmit(formsubmit.co, 무료)을 거쳐 `info@medivis.co.kr`로 메일이 갑니다.
+
+## 공개 절차 (사람이 직접 할 일)
+1. **GitHub 계정**: 회사 명의 계정이나 조직을 만들고 `medivis-homepage` 저장소(Public)를 만든 뒤 이 폴더를 push 합니다.
+2. **Pages 켜기**: Settings → Pages → Source `Deploy from a branch`, Branch `master` / 폴더 `/docs` → Save.
+   Custom domain에 `www.medivis.co.kr`을 입력하고(CNAME 파일이 이미 있음) DNS가 연결되면 **Enforce HTTPS**를 체크합니다.
+   (권장) 계정 Settings → Pages → Verified domains에서 medivis.co.kr 도메인 인증을 합니다. GitHub가 알려주는 TXT 레코드를 가비아에 추가하면 됩니다.
+3. **가비아 DNS 변경** (My가비아 → 도메인 → medivis.co.kr → DNS 설정):
+
+   | 타입 | 호스트 | 값 | 비고 |
+   |---|---|---|---|
+   | A | @ | 185.199.108.153 | 기존 115.68.168.215 삭제 |
+   | A | @ | 185.199.109.153 | |
+   | A | @ | 185.199.110.153 | |
+   | A | @ | 185.199.111.153 | |
+   | CNAME | www | `<GitHub계정>.github.io.` | 기존 www A 레코드(115.68.168.215) 삭제 |
+
+   **MX(outlook.com)와 TXT(spf, MS=…) 레코드는 절대 건드리지 마세요. 회사 메일이 끊깁니다.**
+4. **문의 폼 활성화**: 사이트가 뜨면 문의 폼으로 시험 문의를 1건 보냅니다. FormSubmit이 info@medivis.co.kr로 보내는 확인 메일에서 Activate를 누르면,
+   이후 메일에 나오는 랜덤 주소로 `docs/medivis/inquiry/index.html`의 `formsubmit.co/ajax/info@medivis.co.kr` 부분을 바꿉니다(메일주소 노출 방지).
+5. **개인정보처리방침 검토**: 문의 내용이 이제 FormSubmit(해외 서비스)을 거쳐 전달됩니다. 현재 방침의 "6. International Data Transfers"에 일반적인 국외이전 문구는 있지만, 수탁자(FormSubmit)를 명시할지 검토하세요.
+6. 새 사이트를 확인한 뒤 미담기획에 호스팅 종료를 확정합니다 (12/15 예정).

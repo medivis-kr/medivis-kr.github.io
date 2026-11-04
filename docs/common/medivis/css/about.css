@@ -1,0 +1,689 @@
+body{
+	margin: 0px;
+}
+
+/*PC*/
+@media (width > 1024px) {
+
+	.section01 {
+		max-width: 1440px;
+		min-width: 1025px;
+		/*width: 100%;*/
+		height: 500px;
+	}
+
+	.section01 > .section01_01 {
+		max-width: 1440px;
+		min-width: 1025px;
+		/*width: 100%;*/
+		height: 500px;
+		background-color: #fff;
+	}
+
+	.section01 > .section01_01 > .title {
+		color: #000;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: auto;
+		position: relative;
+		top: 300px;
+	}
+
+	.section02 > .section02_02 {
+		max-width: 1440px;
+		min-width: 1025px;
+		width: 100%;
+		height: 500px;
+		/*background-color: #fff;*/
+		/*background-color: #004898;*/
+		/*background-image: url(../img/bg_section01.png);*/
+		margin: auto;
+	}
+
+	.section02 > .section02_02 > .section02_01_div {
+		float: left;
+		width: 33%;
+	}
+
+	.section02 > .section02_02 > .section02_01_div > img {
+		width: 100%;
+	}
+
+	.section02 > .section02_02 > .section02_02_div {
+		float: right;
+		max-width: 810px;
+		min-width: 600px;
+		width: 65%;
+		text-align: left;
+
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .title {
+		margin-top: 196px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px; /* 89.474% */
+		letter-spacing: 0.38px;
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .sub_title {
+		margin-top: 20px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 34px; /* 121.429% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .context {
+		margin-top: 30px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 21px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+		/*text-transform: capitalize;*/
+	}
+
+
+
+
+	.section01 > .swiper-container {
+		overflow: hidden;
+		position: relative;
+		height: 100%;
+		width: 100%;
+	}
+
+	.swiper-slide > img {
+		width: 100%;
+		height: 100%;
+	}
+
+	.section01_bg {
+		width: 100%;
+		height: 100%;
+		background-size: 100% 100%;
+		padding-top: 345px;
+	}
+
+	.section01_div > .section01_title1 {
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 60px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 84px; /* 140% */
+	}
+
+	.section01_div {
+		width: 710px;
+		margin: auto;
+		position: relative;
+		top: -710px;
+		z-index: 100;
+		/*margin-top: 345px;*/
+	}
+
+	.section01_div > .section01_title2 {
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 32px;
+		color: #fff;
+	}
+
+	.section01_btn {
+		display: flex;
+		width: 207px;
+		height: 68px;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 100px;
+		background: linear-gradient(180deg, #A1C9FF 0%, #004FFA 108.57%);
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+		margin: auto;
+		margin-top: 50px;
+		border: 0px;
+	}
+
+	.section02 {
+		width: 100%;
+		/*height: 637px;*/
+		height: 550px;
+        max-height: 700px;
+		/*background-color: #004898;*/
+		background-image: url(/common/medivis/img/about/about_section01.png);
+		background-repeat: no-repeat; /* 이미지 반복 방지 */
+		background-position: right center; /* 오른쪽 중앙에 배치 */
+	}
+
+
+	.section03 {
+		width: 100%;
+		/*height: 895px;*/
+		background-color: #fff;
+		padding-bottom: 170px;
+	}
+
+	.section03 > .card {
+		max-width: 1440px;
+		/*min-width: 1023px;*/
+		width: 90%;
+		/*height: 304px;*/
+		max-height: 400px;
+        height: 300px;
+		margin: auto;
+		padding: 50px;
+		border-radius: 30px;
+		background: #F1F5FA;
+		margin-top: 50px;
+	}
+
+	.section03 > .card:nth-child(1) {
+		margin-top: 120px;
+	}
+
+	.section03 > .card > ul{
+		clear: both;
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section03 > .card > ul > li {
+		float: left;
+	}
+
+	.section03 > .card > ul > li > img {
+		width: 100%;
+	}
+
+	.section03 > .card > ul > li:nth-child(1) {
+		max-width: 285px;
+		/*height: 285px;*/
+		width: 30%;
+	}
+
+	.section03 > .card > ul > li:nth-child(2) {
+		padding-left: 100px;
+		/*width: 835px;*/
+		/*max-width: 835px;*/
+		/*min-width: 600px;*/
+		width: 57%;
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > .title {
+		color: #004898;
+		font-family: Pretendard;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > .sub_title {
+		color: #000;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 170% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > div > .btn {
+		/*width: 230px;*/
+		width: 30%;
+		height: 53px;
+		border-radius: 100px;
+		background: #004898;
+		text-align: center;
+		border: 0px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 17px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > div > .btn:nth-child(2), .btn:nth-child(3) {
+		margin-left: 20px;
+	}
+
+
+
+}
+
+
+
+
+
+
+/********************************************************************************/
+
+
+/*테블릿*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+
+	.section01 {
+		width: 100%;
+		height: 500px;
+	}
+
+	.section01 > .section01_01 {
+		width: 100%;
+		height: 500px;
+		background-color: #fff;
+	}
+
+	.section01 > .section01_01 > .title {
+		color: #000;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: auto;
+		position: relative;
+		top: 300px;
+	}
+
+	.section02 {
+		background-image: url(/common/medivis/img/about/about_section01.png);
+		background-repeat: no-repeat; /* 이미지 반복 방지 */
+		background-position: right center; /* 오른쪽 중앙에 배치 */
+	}
+
+	.section02 > .section02_02 {
+		width: 1000px;
+		/*height: 570px;*/
+		height: 50%;
+		/*background-color: #fff;*/
+		/*background-color: #004898;*/
+		/*background-image: url(../img/bg_section01.png);*/
+		margin: auto;
+	}
+
+	.section02 > .section02_02 > .section02_01_div {
+		float: left;
+		/*width: 400px;*/
+		width: 30%;
+	}
+
+	.section02 > .section02_02 > .section02_01_div > img {
+		width: 100%;
+	}
+
+	.section02 > .section02_02 > .section02_02_div {
+		/*float: right;*/
+		/*width: 510px;*/
+		/*text-align: left;*/
+		float: left;
+		width: 49%;
+		text-align: left;
+		padding-left: 20px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .title {
+		margin-top: 100px;
+		color: #FFF;
+		font-family: Pretendard;
+		/*font-size: 38px;*/
+		font-size: 5vw;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px; /* 89.474% */
+		letter-spacing: 0.38px;
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .sub_title {
+		margin-top: 20px;
+		color: #FFF;
+		font-family: Pretendard;
+		/*font-size: 28px;*/
+		font-size: 2.7vw;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 34px; /* 121.429% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .context {
+		margin-top: 30px;
+		color: #FFF;
+		font-family: Pretendard;
+		/*font-size: 22px;*/
+		font-size: 1.8vw;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 154.545% */
+		/*text-transform: capitalize;*/
+	}
+
+
+	.section03 {
+		width: 100%;
+		/*height: 895px;*/
+		background-color: #fff;
+		padding-bottom: 170px;
+	}
+
+	.section03 > .card {
+		width: 90%;
+		height: 290px;
+		margin: auto;
+		padding: 30px;
+		border-radius: 30px;
+		background: #F1F5FA;
+		margin-top: 50px;
+	}
+
+	.section03 > .card:nth-child(1) {
+		margin-top: 80px;
+	}
+
+	.section03 > .card > ul{
+		clear: both;
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section03 > .card > ul > li {
+		float: left;
+	}
+
+	.section03 > .card > ul > li > img {
+		width: 100%;
+	}
+
+	.section03 > .card > ul > li:nth-child(1) {
+		max-width: 265px;
+		width: 30%;
+		/*height: 265px;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) {
+		padding-left: 60px;
+		max-width: 575px;
+		width: 60%;
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > .title {
+		color: #004898;
+		font-family: Pretendard;
+		font-size: 24px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > .sub_title {
+		color: #000;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 25px; /* 170% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > div > .btn {
+		width: 30%;
+		height: 53px;
+		border-radius: 100px;
+		background: #004898;
+		text-align: center;
+		border: 0px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > div > .btn:nth-child(2), .btn:nth-child(3) {
+		margin-left: 10px;
+	}
+
+}
+
+
+
+
+
+/********************************************************************************/
+
+
+@media (max-width: 768px) {  /* 모바일 */
+	.section01 {
+		width: 100%;
+		height: 500px;
+	}
+
+	.section01 > .section01_01 {
+		width: 100%;
+		height: 500px;
+		background-color: #fff;
+	}
+
+	.section01 > .section01_01 > .title {
+		color: #000;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 48px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-transform: uppercase;
+		margin: auto;
+		position: relative;
+		top: 300px;
+	}
+
+	.section02{
+		background-image: url(/common/medivis/img/about/about_section01.png);
+		background-repeat: no-repeat; /* 이미지 반복 방지 */
+		background-position: right center; /* 오른쪽 중앙에 배치 */
+	}
+
+	.section02 > .section02_02 {
+		width: 100%;
+		/*height: 570px;*/
+		/*background-color: #fff;*/
+		/*background-color: #004898;*/
+		/*background-image: url(../img/bg_section01.png);*/
+		margin: auto;
+	}
+
+	.section02 > .section02_02 > .section02_01_div {
+		width: 100%;
+		text-align: center;
+	}
+
+	.section02 > .section02_02 > .section02_01_div > img {
+		width: 80%;
+		height: auto;
+	}
+
+	.section02 > .section02_02 > .section02_02_div {
+		/* width: 100%; */
+		text-align: left;
+		padding: 20px;
+		/* margin: 20px;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul{
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .title {
+		margin-top: 50px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: 34px; /* 89.474% */
+		letter-spacing: 0.38px;
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .sub_title {
+		margin-top: 20px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 28px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: 34px; /* 121.429% */
+		/*text-transform: capitalize;*/
+	}
+
+	.section02 > .section02_02 > .section02_02_div > ul > .context {
+		margin-top: 30px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 25px; /* 154.545% */
+		/*text-transform: capitalize;*/
+	}
+
+
+	.section03 {
+		width: 100%;
+		/*height: 895px;*/
+		background-color: #fff;
+		padding-bottom: 170px;
+	}
+
+	.section03 > .card {
+		width: 100%;
+		/*height: 290px;*/
+		margin: auto;
+		/*padding: 50px;*/
+		padding-top: 30px;
+		padding-bottom: 30px;
+		border-radius: 30px;
+		background: #F1F5FA;
+		margin-top: 50px;
+		text-align: center;
+	}
+
+	.section03 > .card:nth-child(1) {
+		margin-top: 80px;
+	}
+
+	.section03 > .card > ul{
+		clear: both;
+		list-style: none;
+		padding: 0px;
+	}
+
+	.section03 > .card > ul > li {
+		/*float: left;*/
+	}
+
+	.section03 > .card > ul > li > img {
+		width: 80%;
+	}
+
+	.section03 > .card > ul > li:nth-child(1) {
+		/*width: 265px;*/
+		/*height: 265px;*/
+		width: 100%;
+	}
+
+	.section03 > .card > ul > li:nth-child(2) {
+		/*padding-left: 20px;*/
+		/*width: 575px;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > .title {
+		color: #004898;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > .sub_title {
+		color: #000;
+		font-family: Pretendard;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: 34px; /* 170% */
+		/*text-transform: capitalize;*/
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > div > .btn {
+		width: 90%;
+		height: 53px;
+		border-radius: 100px;
+		background: #004898;
+		text-align: center;
+		border: 0px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+		/*text-transform: capitalize;*/
+	}
+
+	.section03 > .card > ul > li:nth-child(2) > div > .btn:nth-child(2), .btn:nth-child(3) {
+		margin-top: 10px;
+	}
+}

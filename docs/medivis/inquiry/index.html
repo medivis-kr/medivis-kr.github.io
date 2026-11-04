@@ -1,0 +1,369 @@
+<head>
+	<meta charset="utf-8">
+
+	<link rel="icon" href="/uploads/favicon/1769137000724_favicon.ico" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#000000">
+	<meta name="description" content="medical device manufacturers with regional distributors and customers worldwide,medical device manufacturers, medivis">
+	<link rel="apple-touch-icon" href="/logo192.png">
+
+	<link rel="stylesheet" as="style" crossorigin="" href="/common/medivis/css/pretendardvariable.css" />
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+	<title>MEDIVIS</title>
+
+	<!-- jQuery 3 -->
+	<script src="/common/admin/js/jquery-1.12.4.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="/common/medivis/js/common.js?v=1"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/browser/overlayscrollbars.browser.es6.min.js" crossorigin="anonymous"></script>
+
+			<link rel="stylesheet" href="/common/medivis/css/layout.css?date=20260205" />
+		<link rel="stylesheet" href="/common/medivis/css/sub.css?date=20260205" />
+		<link rel="stylesheet" href="/common/medivis/css/submenu.css?date=20260205" />
+	
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+<header>
+
+	<menu>
+		<div id="logo" onclick="location.href='/'" >MEDIVIS</div>
+		<ul>
+			<li><span >About Us</span></li>
+			<li><span >Business</span></li>
+			<li><span >Product</span></li>
+			<li><span class="active">Contact Us</span></li>
+		</ul>
+		<div class="men">
+			<input id="menu-btn" type="checkbox" />
+			<div for="menu-btn" class="hMenu" >
+				<label for="menu-btn" class="">
+					menu
+					<div class="hMenuSub"></div>
+				</label>
+			</div>
+		</div>
+
+		<div class="subMenu">
+			<ul>
+				<li>About Us</li>
+				<li onclick="location.href='/medivis/about'">Company Overview</li>
+				<li onclick="location.href='/medivis/marketing'">Target Markets</li>
+				<li onclick="location.href='/medivis/mission'">Mission & Values</li>
+			</ul>
+			<ul>
+				<li>Business</li>
+				<li onclick="location.href='/medivis/today'">Our Role Today</li>
+				<li onclick="location.href='/medivis/partners'">Partners</li>
+			</ul>
+			<ul>
+				<li>Product</li>
+				<li onclick="location.href='/medivis/product/xray'">X-Ray</li>
+				<li onclick="location.href='/medivis/product/endoscopy'">Endoscopy</li>
+			</ul>
+			<ul>
+				<li>Contact Us</li>
+				<li onclick="location.href='/medivis/inquiry'">Inquiry</li>
+				<li onclick="location.href='/medivis/location'">Office Locations</li>
+			</ul>
+		</div>
+	</menu>
+</header>
+<div class="subMenuMobile">
+	<ul>
+		<li class="title">About Us</li>
+		<li onclick="location.href='/medivis/about'">Company Overview</li>
+		<li onclick="location.href='/medivis/marketing'">Target Markets</li>
+		<li onclick="location.href='/medivis/mission'">Mission & Values</li>
+		<li class="title">Business</li>
+		<li onclick="location.href='/medivis/today'">Our Role Today</li>
+		<li onclick="location.href='/medivis/partners'">Partners</li>
+		<li class="title">Product</li>
+		<li onclick="location.href='/medivis/product/xray'">X-Ray</li>
+		<li onclick="location.href='/medivis/product/endoscopy'">Endoscopy</li>
+		<li class="title">Contact Us</li>
+		<li onclick="location.href='/medivis/inquiry'">Inquiry</li>
+		<li onclick="location.href='/medivis/location'">Office Locations</li>
+	</ul>
+
+</div>
+
+<script>
+	$(document).ready(function() {
+		document.querySelector(".hMenu").addEventListener("click", (e) => {
+			console.log(e.target);
+			e.target.classList.toggle("menu-on");
+			document.querySelector(".subMenuMobile").classList.toggle("menu-on");
+		});
+	})
+</script>
+
+
+	<link rel="stylesheet" href="/common/medivis/css/inquiry.css?date=20260126" />
+
+<main>
+	<div class="section01 clear" >
+		<div class="section01_01">
+			<div class="title"
+				 data-aos="fade-up"
+				 data-aos-delay="50"
+				 data-aos-duration="1000"
+			>Inquiry</div>
+		</div>
+
+		<form id="form" method="post">
+			<div class="section02">
+				<ul>
+					<li>
+						<table>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="1000" >
+								<th>Company Name<span>*</span></th>
+								<td>
+									<input type="text" name="company_name" placeholder="Please enter your company name" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="1200" >
+								<th>Country<span>*</span></th>
+								<td>
+									<input type="text" name="country" placeholder="Please enter your country" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="1400" >
+								<th>Business Type<span>*</span></th>
+								<td>
+									<div>
+										<div>
+											<input type="checkbox" name="business" class="checkbox" value="Manufacturer"><span class="checkbox_span">Manufacturer</span>
+										</div>
+										<div>
+											<input type="checkbox" name="business" class="checkbox" value="OEM/ODM"><span class="checkbox_span">OEM/ODM</span>
+										</div>
+										<div>
+											<input type="checkbox" name="business" class="checkbox" value="Trading Company"><span class="checkbox_span">Trading Company</span>
+										</div>
+										<div>
+											<input type="checkbox" name="business" class="checkbox" value="Other"><span class="checkbox_span">Other</span>
+										</div>
+									</div>
+									<input type="text" class="business_text" name="business_text" placeholder="Other" style="display:none;" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="1600" >
+								<th>Full Name<span>*</span></th>
+								<td>
+									<input type="text" name="full_name" placeholder="Please enter your full name" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="1800" >
+								<th>Job Title<span>*</span></th>
+								<td>
+									<input type="text" name="job_title" placeholder="Please enter your job title" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="2000" >
+								<th>Email Address<span>*</span></th>
+								<td>
+									<input type="text" name="email_address" placeholder="Please enter your email address" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="2200" >
+								<th>Contact Number<span>*</span></th>
+								<td>
+									<input type="text" name="contact_number" placeholder="Please enter your contact number" />
+								</td>
+							</tr>
+							<tr data-aos="fade-up"
+								data-aos-delay="50"
+								data-aos-duration="2400" >
+								<th>Message<span>*</span></th>
+								<td>
+									<input type="text" name="message" placeholder="Please enter your contact number" />
+								</td>
+							</tr>
+						</table>
+					</li>
+
+										<li>
+						
+						<div class="agree_check_div">
+							<table style="width: 100%;">
+								<tr style="background-color: #fff;">
+									<td style="width: 50px; text-align: center;">
+										<input type="checkbox" name="agree_check" id="agree_check" />
+									</td>
+									<td class="agree_text" for="agree_check">
+											I agree to the collection and use of my personal data in accordance with the Privacy Policy for the purpose of business inquiry and communication.
+									</td>
+								</tr>
+								<tr style="background-color: #fff; display: none;">
+									<td colspan="2" style="text-align: right; cursor: pointer;" onclick="showMore()">Show More</td>
+								</tr>
+							</table>
+						</div>
+
+						<input type="button" value="Submit Inquiry" class="btn_submit" />
+					</li>
+				</ul>
+			</div>
+		</form>
+
+
+	</div>
+
+</main>
+
+<div>
+
+</div>
+
+<script>
+	$(document).ready(function() {
+		$(".checkbox").on("click", function() {
+			$(".checkbox").prop("checked", false);
+			$(this).prop("checked", true);
+
+			if ( $(this).prop("checked") == true ) {
+				if ( $(this).val() == "Other" ){
+					$(".business_text").show();
+				} else {
+					$(".business_text").hide();
+				}
+			} else {
+				$(".business_text").hide();
+			}
+		});
+
+		$(".btn_submit").on("click", function (){
+			$("input[type=text]").css("border-bottom", "0px solid #ccc");
+
+			$("input[type=text]").each(function(){
+				if ( $("input[name=business]:checked").val() == 'Other' ) {
+					if ( $(this).val() == "" ){
+						alert("Please fill in all the required fields.");
+						$(this).css("border-bottom", "1px solid red");
+						$(this).focus();
+						return false;
+					}
+				} else {
+					if ( !$(this).hasClass("business_text") ){
+						if ( $(this).val() == "" ){
+							alert("Please fill in all the required fields.");
+							$(this).css("border-bottom", "1px solid red");
+							$(this).focus();
+							return false;
+						}
+					}
+				}
+			});
+
+			if ( $("#agree_check:checked").length == 0 ) {
+				alert("Please check I agree to the Privacy Policy.");
+				$(this).focus();
+				return false;
+			}
+
+			sendInquiry(this);
+		});
+
+	})
+
+
+	
+
+	function sendInquiry(btn) {
+		// Required-field check (the original loop's "return false" only left the loop).
+		var missing = $("input[type=text]").filter(function () {
+			return !$(this).hasClass("business_text") || $("input[name=business]:checked").val() == "Other";
+		}).filter(function () { return $.trim($(this).val()) == ""; });
+		if (missing.length) { missing.first().focus(); return; }
+		if (!$("input[name=business]:checked").length) { alert("Please select your business type."); return; }
+
+		var data = { _subject: "[MEDIVIS Website] New inquiry", _template: "table", _captcha: "false" };
+		$("#form").serializeArray().forEach(function (f) { data[f.name] = f.value; });
+		$(btn).prop("disabled", true).val("Sending...");
+		fetch("https://formsubmit.co/ajax/info@medivis.co.kr", {
+			method: "POST",
+			headers: { "Content-Type": "application/json", "Accept": "application/json" },
+			body: JSON.stringify(data)
+		}).then(function (r) { return r.json(); }).then(function (r) {
+			if (String(r.success) !== "true") throw new Error(r.message || "send failed");
+			alert("Your inquiry has been sent. Thank you.");
+			$("#form")[0].reset(); $(".business_text").hide();
+		}).catch(function () {
+			alert("Sorry, the inquiry could not be sent. Please email us at info@medivis.co.kr.");
+		}).then(function () { $(btn).prop("disabled", false).val("Submit Inquiry"); });
+	}
+</script>
+
+	<footer>
+	<div class="container">
+		<div class="header">
+			<div class="title fl_left">MEDIVIS</div>
+			<div class="fMenu fl_right">
+				<ul>
+					<li class="fl_left" onclick="location.href='/medivis/about'">ABOUT US</li>
+					<li class="fl_left" onclick="location.href='/medivis/today'">BUSINESS</li>
+					<li class="fl_left" onclick="location.href='/medivis/about'">PRODUCT</li>
+					<li class="fl_left" onclick="location.href='/medivis/inquiry'">CONTACT US</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="body mt30">
+			<ul>
+				<li class="fl_left pr15" onclick="location.href='/medivis/policy/privacy'">PRIVACY POLICY</li>
+				<li class="fl_left pr15">|</li>
+				<li class="fl_left" onclick="location.href='/medivis/policy/termsuse'">TERTMS OF USE</li>
+			</ul>
+		</div>
+
+		<div class="footer mt30">
+			<ul class="clear mt10">
+				<li class="fl_left pr15">Business Name : MEDIVIS</li>
+				<li class="fl_left pr15">|</li>
+				<li class="fl_left pr15">CEO : HYUN SUB CHUNG</li>
+				<li class="fl_left pr15">|</li>
+				<li class="fl_left">E-mail : info@medivis.co.kr</li>
+			</ul>
+			<ul class="clear mt10">
+				<li class="fl_left pr15">Address : Bldg. B, Suite 908, 19 Cheongcho-ro, Deogyang-gu, Goyang-si, Gyeonggi-do, 10542, Republic of Korea (IS Biz Tower Central Phase 2)</li>
+			</ul>
+			<ul class="clear mt10">
+				<li class="fl_left pr15">Copyright © 2026 MEDIVIS Inc. CORPORATION All rights reserved.</li>
+			</ul>
+		</div>
+	</div>
+</footer>
+
+
+<script>
+function showMore(){
+
+}
+</script>
+</body>
+
+
+</html>

@@ -1,0 +1,564 @@
+body{
+	margin: 0px;
+}
+
+/*PC*/
+@media (width > 1024px) {
+	#menu-btn {
+		display: none;
+	}
+	.subMenuMobile {
+		display: none;
+	}
+
+	header{
+		height: 100px;
+		width: 100%;
+		max-width: 1920px;
+		line-height: 100px;
+		background-color: #fff;
+		position: fixed;
+		top: 0px;
+		z-index: 10;
+	}
+
+	#logo{
+		float: left;
+		height: 100%;
+		line-height: 100px;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		/*text-transform: capitalize;*/
+	}
+
+	header > menu {
+		max-width: 1440px;
+		min-width: 1024px;
+		width: 100%;
+		height: 100px;
+		margin: auto;
+		padding: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	header > menu > ul {
+		width: 600px;
+		margin: auto;
+		list-style: none;
+		padding: 0px;
+		position: relative;
+		z-index: 10;
+		height: 100%;
+	}
+
+	header > menu > ul:hover ~ .subMenu, .subMenu:hover {
+		display: block;
+	}
+
+	header > menu > ul > li {
+		float: left;
+		line-height: 100px;
+		width: 150px;
+		text-align: center;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.active{
+		border-bottom: 3px solid #0076FA;
+	}
+
+	header > menu > ul > li:nth-child(2) {
+		/*margin-left: 250px;*/
+	}
+
+	header > menu > ul > li:last-child {
+		/*margin-left: 250px;*/
+	}
+
+	header > .menu_font{
+		float: left;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.hMenu {
+		float: right;
+		width: 60px;
+		border-top: 3px solid #000;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.hMenu > label > .hMenuSub{
+		border-top: 3px solid #000;
+		float: right;
+		width: 20px;
+		margin-top: 7px;
+	}
+
+	.subMenu {
+		background-color: #444444;
+		border-radius: 0px 0px 10px 10px;
+		width: 620px;
+		height: 120px;
+		margin: auto;
+		padding: 25px;
+		padding-left: 45px;
+		position: absolute;
+		z-index: 9;
+		top: 100px;
+		margin-left: 85px;
+		display: none;
+	}
+
+	.subMenu > ul {
+		list-style: none;
+		padding: 0px;
+		float: left;
+	}
+
+	.subMenu > ul > li {
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+		cursor: pointer;
+	}
+
+	.subMenu > ul > li:nth-child(1){
+		display: none;
+	}
+
+}
+
+
+
+
+
+
+/********************************************************************************/
+
+
+/*테블릿*/
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+	#menu-btn {
+		display: none;
+	}
+
+	header{
+		height: 100px;
+		width: 100%;
+		line-height: 100px;
+		background-color: #fff;
+		position: fixed;
+		top: 0px;
+		z-index: 10;
+	}
+
+	#logo{
+		float: left;
+		height: 100%;
+		line-height: 100px;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		/*text-transform: capitalize;*/
+	}
+
+	header > menu {
+		max-width: 1024px;
+		min-width: 769px;
+		width: 100%;
+		height: 100px;
+		margin: auto;
+		padding: 0px;
+		display: flex;
+		justify-content: center;
+	}
+
+	header > menu > ul {
+		width: 400px;
+		margin: auto;
+		list-style: none;
+		padding: 0px;
+		position: relative;
+		z-index: 10;
+		height: 100%;
+	}
+
+	/*header > menu > ul:hover ~ .subMenu, .subMenu:hover {*/
+	/*	display: none;*/
+	/*}*/
+
+	header > menu > ul > li {
+		float: left;
+		line-height: 100px;
+		width: 100px;
+		text-align: center;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 600;
+		cursor: pointer;
+	}
+
+	.active{
+		border-bottom: 3px solid #0076FA;
+	}
+
+	header > menu > ul > li:nth-child(2) {
+		/*margin-left: 250px;*/
+	}
+
+	header > menu > ul > li:last-child {
+		/*margin-left: 250px;*/
+	}
+
+	header > .menu_font{
+		float: left;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.hMenu {
+		float: right;
+		width: 60px;
+		border-top: 3px solid #000;
+		color: #000;
+		font-family: Pretendard;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.hMenu > label > .hMenuSub{
+		border-top: 3px solid #000;
+		float: right;
+		width: 20px;
+		margin-top: 7px;
+	}
+
+	header > menu > ul:hover ~ .subMenu, .subMenu:hover {
+		/*display: block;*/
+	}
+
+
+
+	.subMenu {
+		background-color: #444444;
+		border-radius: 0px 0px 10px 10px;
+		width: 620px;
+		height: 120px;
+		margin: auto;
+		padding: 25px;
+		padding-left: 45px;
+		position: absolute;
+		top: 100px;
+		z-index: 9;
+		display: none;
+		margin-left: 200px;
+	}
+
+	.subMenu > ul {
+		list-style: none;
+		padding: 0px;
+		float: left;
+	}
+
+
+
+	.subMenu > ul > li {
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+	}
+
+
+
+	.subMenuMobile {
+		position: fixed;
+		background-color: #444444;
+		width: 50%;
+		height: 100%;
+		z-index: 10;
+		overflow-y: auto;
+		top: 0px;
+		/*display: none;*/
+		transform: translateX(-100%);
+		transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		/*padding-top: 100px;*/
+	}
+
+	.menu-on{
+		transform: translateX(0%);
+		transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.subMenuMobile > ul > .title {
+		color: #FFF;
+		text-align: left;
+		font-family: Pretendard;
+		font-size: 20px !important;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+		padding-left: 15px;
+	}
+
+	.subMenuMobile > ul {
+		list-style: none;
+		padding: 0px;
+	}
+
+	.subMenuMobile > ul > li {
+		color: #FFF;
+		text-align: left;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+		padding: 5px;
+		padding-left: 35px;
+	}
+
+}
+
+
+
+
+
+/********************************************************************************/
+
+
+@media (max-width: 768px) {  /* 모바일 */
+	#menu-btn {
+		display: none;
+	}
+	#menu-btn:checked ~ .subMenuMobile {
+		display: block;
+	}
+	.subMenuMobile {
+		display: block;
+	}
+
+	.subMenu {
+		background-color: #444444;
+		border-radius: 0px 0px 10px 10px;
+		width: 670px;
+		height: 120px;
+		margin: auto;
+		padding: 25px;
+		padding-left: 45px;
+		position: relative;
+		z-index: 9;
+		display: none;
+	}
+
+	.subMenu > ul {
+		list-style: none;
+		padding: 0px;
+		float: left;
+	}
+
+	.subMenu > ul > li {
+		color: #FFF;
+		text-align: center;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+
+	}
+
+	.subMenu > ul > li:nth-child(1){
+		display: none;
+	}
+
+	.subMenuMobile {
+		position: fixed;
+		background-color: #444444;
+		width: 50%;
+		height: 100%;
+		z-index: 10;
+		overflow-y: auto;
+		top: 0px;
+		/*display: none;*/
+		transform: translateX(-100%);
+		transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+		/*padding-top: 100px;*/
+	}
+
+	.menu-on{
+		transform: translateX(0%);
+		transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.subMenuMobile > ul > .title {
+		color: #FFF;
+		text-align: left;
+		font-family: Pretendard;
+		font-size: 20px !important;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+		padding-left: 15px;
+	}
+
+	.subMenuMobile > ul {
+		list-style: none;
+		padding: 0px;
+	}
+
+	.subMenuMobile > ul > li {
+		color: #FFF;
+		text-align: left;
+		font-family: Pretendard;
+		font-size: 16px;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		width: 152px;
+		height: 50px;
+		padding: 5px;
+		padding-left: 35px;
+	}
+
+	header{
+		height: 100px;
+		width: 100%;
+		line-height: 100px;
+		background-color: #000;
+		position: fixed;
+		top: 0px;
+		z-index: 10;
+	}
+
+	#logo{
+		height: 100%;
+		line-height: 100px;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 38px;
+		font-style: normal;
+		font-weight: 700;
+		/*text-transform: capitalize;*/
+		float: left;
+	}
+
+	header > menu {
+		width: 100%;
+		height: 100px;
+		margin: auto;
+		padding: 0px;
+	}
+
+	header > menu > ul {
+		list-style: none;
+		padding: 0px;
+		display: none;
+	}
+
+	header > menu > ul > li:nth-child(1) {
+		float: left;
+	}
+	header > menu > ul > li:nth-child(2) {
+		display: none;
+	}
+	header > menu > ul > li:nth-child(3) {
+		display: none;
+	}
+	header > menu > ul > li:nth-child(4) {
+		display: none;
+	}
+	header > menu > ul > li:nth-child(5) {
+		display: none;
+	}
+
+	header > menu > ul > li:last-child {
+		float: right;
+		padding-right: 10px;
+	}
+
+	header > .menu_font{
+		float: left;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 20px;
+		font-style: normal;
+		font-weight: 600;
+		line-height: normal;
+	}
+
+	.hMenu {
+		float: right;
+		width: 60px;
+		border-top: 3px solid #fff;
+		color: #FFF;
+		font-family: Pretendard;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		text-align: left;
+		margin-top: 40px;
+	}
+
+	.hMenuSub{
+		border-top: 3px solid #fff;
+		float: right;
+		width: 20px;
+		margin-top: 7px;
+	}
+
+
+}
