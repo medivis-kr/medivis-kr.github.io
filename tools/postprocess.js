@@ -50,7 +50,8 @@ for (const f of walk(SITE).filter(f => f.endsWith('.html'))) {
 }
 
 // GitHub Pages extras.
-fs.writeFileSync(path.join(SITE, 'CNAME'), 'www.medivis.co.kr\n');
+// No CNAME here: the custom domain is set in Settings → Pages once DNS is switched (GitHub commits CNAME itself),
+// so the site can be checked at https://medivis-kr.github.io first.
 fs.writeFileSync(path.join(SITE, '.nojekyll'), '');
 fs.writeFileSync(path.join(SITE, '404.html'),
   '<!doctype html><meta charset="utf-8"><title>MEDIVIS</title><meta http-equiv="refresh" content="0; url=/">' +
