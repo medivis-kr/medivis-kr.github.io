@@ -20,14 +20,14 @@
   function applyFilter(key) {
     filters.forEach(function (a) { a.classList.toggle('is-active', a.dataset.filter === key); });
     [].forEach.call(document.querySelectorAll('.product-grid .product-card'), function (c) {
-      c.hidden = key !== 'all' && c.dataset.cat !== key;
+      c.hidden = c.dataset.cat !== key;
     });
   }
   filters.forEach(function (a) {
     a.addEventListener('click', function (e) {
       e.preventDefault();
       applyFilter(a.dataset.filter);
-      history.replaceState(null, '', a.dataset.filter === 'all' ? location.pathname : a.getAttribute('href'));
+      history.replaceState(null, '', a.getAttribute('href'));
     });
   });
   var pre = location.hash.match(/^#cat-(\w+)/);

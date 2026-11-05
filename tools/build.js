@@ -96,7 +96,6 @@ const productCard = p => `
           <a class="product-card" href="${productUrl(p)}">
             <div class="product-img${p.imageFit === 'photo' ? ' is-photo' : ''}"><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
             <h3>${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${esc(p.name)}</h3>
-            <p>${esc(catName(p.line, p.category))}</p>
           </a>`;
 
 // Structured detail (specs table, feature rows, highlight cards) for products without a detail board image.
@@ -171,14 +170,13 @@ pages['index.html'] = layout({
       <div class="wrap">
         <p class="eyebrow">Our Product</p>
         <h2>Products</h2>
-        <div class="grid-2 line-cards">${data.lines.map(l => {
-          const first = data.products.find(p => p.line === l.key);
-          return `
-          <a class="line-card" href="/medivis/product/${l.key}/">
-            <div class="product-img"><img src="${first.image}" alt="${esc(l.name)}" loading="lazy"></div>
-            <h3>${esc(l.name)}</h3>
-            <p>${esc(l.intro)}</p>
-          </a>`; }).join('')}
+        <div class="grid-4 line-cards">${data.lines.flatMap(l => l.categories.map(c => {
+          const first = data.products.find(p => p.line === l.key && p.category === c.key);
+          return first ? `
+          <a class="line-card" href="/medivis/product/${l.key}/#cat-${c.key}">
+            <div class="product-img"><img src="${first.image}" alt="${esc(c.name)}" loading="lazy"></div>
+            <h3>${esc(c.name)}</h3>
+          </a>` : ''; })).join('')}
         </div>
       </div>
     </section>
@@ -294,7 +292,6 @@ pages['medivis/partners/index.html'] = layout({
           <div class="product-img"><img src="/common/medivis/img/partners/partners_img2.png" alt="" loading="lazy"></div>
           <img class="partner-logo" src="/common/medivis/img/partners/h_logo_2.png" alt="SOLENDOS" loading="lazy">
           <p>Focused on innovative endoscopy systems designed for minimally invasive medical procedures.</p>
-          <a class="text-link" href="/medivis/product/endoscopy/">Endoscopy Products</a>
         </div>
       </div>
     </section>`,
@@ -308,19 +305,19 @@ for (const line of data.lines) {
     // One grid of the line's products; the tabs filter it (and #cat-Digital preselects a tab).
     body: hero({ eyebrow: 'Products', title: line.name, text: esc(line.intro) }) + `
     <div class="section-tabs filter-tabs"><div class="wrap"><ul>
-      <li><a href="#all" data-filter="all" class="is-active">All</a></li>${cats.map(c => `
-      <li><a href="#cat-${c.key}" data-filter="${c.key}">${esc(c.name)}</a></li>`).join('')}
+${cats.map((c, i) => `
+      <li><a href="#cat-${c.key}" data-filter="${c.key}"${i ? '' : ' class="is-active"'}>${esc(c.name)}</a></li>`).join('')}
     </ul></div></div>
     <section class="section">
       <div class="wrap">
         <div class="grid-3 product-grid">${data.products.filter(p => p.line === line.key)
-          .map(p => productCard(p).replace('class="product-card"', `class="product-card" data-cat="${p.category}"`)).join('')}
+          .map(p => productCard(p).replace('class="product-card"', `class="product-card" data-cat="${p.category}"${p.category === cats[0].key ? '' : ' hidden'}`)).join('')}
         </div>
       </div>
-    </section>` + `
+    </section>` + (other ? `
     <section class="cta-band cta-slim">
       <div class="wrap"><h2>${esc(other.name)}</h2><p>${esc(other.intro)}</p><a class="btn btn-light" href="/medivis/product/${other.key}/">View ${esc(other.name)}</a></div>
-    </section>`,
+    </section>` : ''),
   });
   // Old per-category URLs (/medivis/product/xray/Digital) jump to the matching section.
   for (const c of line.categories)
@@ -418,6 +415,15 @@ pages['404.html'] = layout({
   body: hero({ title: 'Page Not Found', text: 'The page you are looking for does not exist.' }) +
     `\n    <section class="section"><div class="wrap"><a class="btn" href="/">Go to Home</a></div></section>`,
 });
+
+// Removed 11/6: AccuRay D5/D6 (89) and the Endoscopy line (92, 94, 95). Old links land on the X-Ray list.
+for (const rel of ['medivis/product/endoscopy', 'medivis/product/view/89', 'medivis/product/view/92',
+                   'medivis/product/view/94', 'medivis/product/view/95'])
+  fs.rmSync(path.join(DOCS, rel), { recursive: true, force: true });
+for (const rel of ['medivis/product/endoscopy', ...['Imaging', 'Light', 'GAS', 'Integrated', 'Target'].map(c => `medivis/product/endoscopy/${c}`),
+                   'medivis/product/view/89/Analog', 'medivis/product/view/92/Integrated',
+                   'medivis/product/view/94/Imaging', 'medivis/product/view/95/Light'])
+  pages[`${rel}/index.html`] = redirect('/medivis/product/xray/');
 
 // Category folders the first mirror created under the wrong product line.
 for (const c of ['GAS', 'Imaging', 'Integrated', 'Light', 'Target'])
