@@ -36,7 +36,7 @@
    "category": "Digital",
    "name": "INNOVISION EXII (Ceiling Type-ELIN T5)",
    "badge": "NEW",
-   "image": "/uploads/product/elin-t5-ceiling.png",
+   "image": "/uploads/product/elin-t5-rendering2.jpg",
    "_source": "MEDIVIS Product Showcase 1.5, slides 4-6 and 10 (Elin-T5); list image = slide 4 ceiling photo; feature images from DK '장비 사진/New T5'",
    "tagline": "Full Auto-Positioning & Integrated Touchscreen LCD Handlebar.",
    "target": "Premium centers requiring high-volume automated exams & spine stitching.",
@@ -134,7 +134,10 @@
       ]
      ]
     }
-   ]
+   ],
+   "imageFit": "photo",
+   "imageBg": "#dddee0",
+   "_image_source": "DK 장비 사진/New T5/NEW ELIN RENDERING/silver/NEW ELIN_RENDERING_2.jpg (cropped)"
   },
   {
    "id": 97,
