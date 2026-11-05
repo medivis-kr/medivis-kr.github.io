@@ -30,8 +30,8 @@
   "products": [
     {
       "id": 96, "line": "xray", "category": "Digital", "name": "INNOVISION EXII (Ceiling Type-ELIN T5)", "badge": "NEW",
-      "image": "/uploads/product/elin-t5.png",
-      "_source": "MEDIVIS Product Showcase 1.5, slides 4-6 and 10 (Elin-T5); images from DK '장비 사진/New T5'",
+      "image": "/uploads/product/elin-t5-ceiling.png",
+      "_source": "MEDIVIS Product Showcase 1.5, slides 4-6 and 10 (Elin-T5); list image = slide 4 ceiling photo; feature images from DK '장비 사진/New T5'",
       "tagline": "Full Auto-Positioning & Integrated Touchscreen LCD Handlebar.",
       "target": "Premium centers requiring high-volume automated exams & spine stitching.",
       "specs": [
@@ -65,7 +65,7 @@
     },
     {
       "id": 97, "line": "xray", "category": "Digital", "name": "INNOVISION DXII (Ceiling Type-ELIN T4)",
-      "image": "/uploads/product/elin-t4.png",
+      "image": "/uploads/product/elin-t4-ceiling.png",
       "_source": "MEDIVIS Product Showcase 1.5, slides 4, 7-8 and 10 (Elin-T4)",
       "tagline": "Motorized Vertical Movement & Automated Bucky Synchronization.",
       "target": "Designed for busy radiology rooms focused on ergonomic operator comfort.",
@@ -83,6 +83,31 @@
         { "label": "Operator Efficiency", "title": "Table Horizontal Tracking", "text": "", "image": "/uploads/product_board/elin-t4_table-tracking.png" },
         { "label": "Operator Efficiency", "title": "Ceiling Tube Vertical Tracking", "text": "", "image": "/uploads/product_board/elin-t4_tube-vertical.png" },
         { "label": "Spine / Leg Stitching", "title": "Automated Spine Stitching", "text": "", "image": "/uploads/product_board/elin-t4_stitching.png" }
+      ]
+    },
+    {
+      "id": 98, "line": "xray", "category": "Digital", "name": "ELIN T3 Plus (Ceiling Type)",
+      "image": "/uploads/product/elin-t3-ceiling.png",
+      "_source": "MEDIVIS Product Showcase 1.5, slides 4, 9 and 10 (Elin-T3 Plus); list image = slide 4 ceiling photo, room image = slide 9",
+      "tagline": "Compact Ceiling Tube Suspension for flexible space utilization.",
+      "target": "Ideal for small/mid-sized clinics seeking proven durability & flexible budget.",
+      "specs": [
+        ["System Concept", "Manual / Semi-Auto"],
+        ["Positioning Drive", "Manual positioning with smooth balance"],
+        ["Tube - Bucky Sync", "Optional Tube & Stand Sync"],
+        ["Spine / Leg Stitching", "Manual Multi-shot Stitching"],
+        ["Handlebar Interface", "Standard Status Display"],
+        ["Key Advantage", "High Cost-Efficiency & Space Saving"]
+      ],
+      "features": [
+        { "label": "The Field-Proven System", "title": "Effortless Positioning, Streamlined Workflow", "text": "Built for extreme durability and versatile room layouts. Can be configured for manual or semi-automatic operation based on facility requirements.", "image": "/uploads/product_board/elin-t3_room.jpg" }
+      ],
+      "highlights": [
+        { "title": "Key Benefits", "items": [
+          ["Workflow Efficiency", "Fast acquisition, easy exam prep."],
+          ["Design & Usability", "Ergonomic, smooth ceiling positioning."],
+          ["Optional Configuration", "Synchronized tube and detector stand."]
+        ] }
       ]
     },
     { "id": 88, "line": "xray", "category": "Digital", "name": "INNOVISION DXII (Floor Type)", "image": "/uploads/product/1772001174568_aaa.png", "detail": "/uploads/product_board/1772080943857_aaa.png" },
