@@ -2107,3 +2107,7 @@ body{
 		padding-top: 5px;
 	}
 }
+
+/* Official MEDIVIS wordmark (brand guideline v1.0): white on the dark hero */
+#logo { display: flex; align-items: center; }
+#logo img { display: block; height: 28px; width: auto; filter: brightness(0) invert(1); }

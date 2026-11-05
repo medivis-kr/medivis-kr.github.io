@@ -562,3 +562,10 @@ body{
 
 
 }
+
+/* Official MEDIVIS wordmark (brand guideline v1.0): MEDIVIS Blue on white headers, white on the dark mobile header */
+#logo { display: flex; align-items: center; }
+#logo img { display: block; height: 28px; width: auto; }
+@media (max-width: 768px) {
+	#logo img { filter: brightness(0) invert(1); }
+}
