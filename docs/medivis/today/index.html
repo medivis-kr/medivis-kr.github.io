@@ -1,362 +1,84 @@
+<!doctype html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-
-	<link rel="icon" href="/uploads/favicon/1769137000724_favicon.ico" type="image/x-icon">
-
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<meta name="theme-color" content="#000000">
-	<meta name="description" content="medical device manufacturers with regional distributors and customers worldwide,medical device manufacturers, medivis">
-	<link rel="apple-touch-icon" href="/logo192.png">
-
-	<link rel="stylesheet" as="style" crossorigin="" href="/common/medivis/css/pretendardvariable.css" />
-
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
-
-	<title>MEDIVIS</title>
-
-	<!-- jQuery 3 -->
-	<script src="/common/admin/js/jquery-1.12.4.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-	<script src="/common/medivis/js/common.js?v=1"></script>
-
-	<script src="https://cdn.jsdelivr.net/npm/overlayscrollbars@2.11.0/browser/overlayscrollbars.browser.es6.min.js" crossorigin="anonymous"></script>
-
-			<link rel="stylesheet" href="/common/medivis/css/layout.css?date=20260205" />
-		<link rel="stylesheet" href="/common/medivis/css/sub.css?date=20260205" />
-		<link rel="stylesheet" href="/common/medivis/css/submenu.css?date=20261105" />
-	
-	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Role Today | MEDIVIS</title>
+  <meta name="description" content="MEDIVIS connects certified medical technologies to global markets with precision and trust.">
+  <meta property="og:title" content="Our Role Today | MEDIVIS">
+  <meta property="og:image" content="https://www.medivis.co.kr/common/medivis/img/main/main01.jpg">
+  <link rel="icon" href="/uploads/favicon/1769137000724_favicon.ico">
+  <link rel="stylesheet" href="/common/medivis/css/pretendardvariable.css">
+  <link rel="stylesheet" href="/assets/site.css?v=202611050648">
 </head>
-
 <body>
-<header>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="/"><img src="/common/medivis/img/logo/medivis_logo.png" alt="MEDIVIS" width="140" height="24"></a>
+      <nav class="nav" aria-label="Main"><ul>
+        <li class="nav-item">
+          <a href="/medivis/about/">About Us</a>
+          <ul class="nav-sub"><li><a href="/medivis/about/">Company Overview</a></li><li><a href="/medivis/marketing/">Target Markets</a></li><li><a href="/medivis/mission/">Mission &amp; Values</a></li></ul>
+        </li>
+        <li class="nav-item is-current">
+          <a href="/medivis/today/">Business</a>
+          <ul class="nav-sub"><li><a href="/medivis/today/">Our Role Today</a></li><li><a href="/medivis/partners/">Partners</a></li></ul>
+        </li>
+        <li class="nav-item">
+          <a href="/medivis/product/xray/">Products</a>
+          <ul class="nav-sub"><li><a href="/medivis/product/xray/">X-Ray</a></li><li><a href="/medivis/product/endoscopy/">Endoscopy</a></li></ul>
+        </li>
+        <li class="nav-item">
+          <a href="/medivis/inquiry/">Contact Us</a>
+          <ul class="nav-sub"><li><a href="/medivis/inquiry/">Inquiry</a></li><li><a href="/medivis/location/">Office Locations</a></li></ul>
+        </li>
+      </ul></nav>
+      <a class="header-cta" href="/medivis/inquiry/">Contact</a>
+      <button class="menu-btn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
 
-	<menu>
-		<div id="logo" onclick="location.href='/'" ><img src="/common/medivis/img/logo/medivis_logo.png" alt="MEDIVIS" height="28"></div>
-		<ul>
-			<li><span >About Us</span></li>
-			<li><span class="active">Business</span></li>
-			<li><span >Product</span></li>
-			<li><span >Contact Us</span></li>
-		</ul>
-		<div class="men">
-			<input id="menu-btn" type="checkbox" />
-			<div for="menu-btn" class="hMenu" >
-				<label for="menu-btn" class="">
-					menu
-					<div class="hMenuSub"></div>
-				</label>
-			</div>
-		</div>
-
-		<div class="subMenu">
-			<ul>
-				<li>About Us</li>
-				<li onclick="location.href='/medivis/about'">Company Overview</li>
-				<li onclick="location.href='/medivis/marketing'">Target Markets</li>
-				<li onclick="location.href='/medivis/mission'">Mission & Values</li>
-			</ul>
-			<ul>
-				<li>Business</li>
-				<li onclick="location.href='/medivis/today'">Our Role Today</li>
-				<li onclick="location.href='/medivis/partners'">Partners</li>
-			</ul>
-			<ul>
-				<li>Product</li>
-				<li onclick="location.href='/medivis/product/xray'">X-Ray</li>
-				<li onclick="location.href='/medivis/product/endoscopy'">Endoscopy</li>
-			</ul>
-			<ul>
-				<li>Contact Us</li>
-				<li onclick="location.href='/medivis/inquiry'">Inquiry</li>
-				<li onclick="location.href='/medivis/location'">Office Locations</li>
-			</ul>
-		</div>
-	</menu>
-</header>
-<div class="subMenuMobile">
-	<ul>
-		<li class="title">About Us</li>
-		<li onclick="location.href='/medivis/about'">Company Overview</li>
-		<li onclick="location.href='/medivis/marketing'">Target Markets</li>
-		<li onclick="location.href='/medivis/mission'">Mission & Values</li>
-		<li class="title">Business</li>
-		<li onclick="location.href='/medivis/today'">Our Role Today</li>
-		<li onclick="location.href='/medivis/partners'">Partners</li>
-		<li class="title">Product</li>
-		<li onclick="location.href='/medivis/product/xray'">X-Ray</li>
-		<li onclick="location.href='/medivis/product/endoscopy'">Endoscopy</li>
-		<li class="title">Contact Us</li>
-		<li onclick="location.href='/medivis/inquiry'">Inquiry</li>
-		<li onclick="location.href='/medivis/location'">Office Locations</li>
-	</ul>
-
-</div>
-
-<script>
-	$(document).ready(function() {
-		document.querySelector(".hMenu").addEventListener("click", (e) => {
-			console.log(e.target);
-			e.target.classList.toggle("menu-on");
-			document.querySelector(".subMenuMobile").classList.toggle("menu-on");
-		});
-	})
-</script>
-
-
-	<link rel="stylesheet" href="/common/medivis/css/today.css?date=20260126" />
-
-<main>
-	<div class="section01 clear" >
-		<div class="section01_01">
-			<div class="title"
-				 data-aos="fade-up"
-				 data-aos-delay="50"
-				 data-aos-duration="1000"
-			>Our Role Today</div>
-		</div>
-
-		<div class="section01_02">
-			<ul>
-				<li>
-					<img src="/common/medivis/img/today/today_img1.png"
-						 data-aos="fade-up"
-						 data-aos-delay="50"
-						 data-aos-duration="1000"
-					/>
-				</li>
-				<li>
-					<div class="title"
-						 data-aos="fade-up"
-						 data-aos-delay="50"
-						 data-aos-duration="1500"
-					>
-						MEDIVIS inc.
-					</div>
-					<div class="context"
-						 data-aos="fade-up"
-						 data-aos-delay="50"
-						 data-aos-duration="2000"
-					>
-						MEDIVIS operates as a strategic global connector within the medical device ecosystem.
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="section02 clear">
-		<div class="section02_01">
-			<div class="section02_02">
-				<div class="card"
-					 data-aos="fade-up"
-					 data-aos-delay="50"
-					 data-aos-duration="1000"
-				>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
-								 data-aos="fade-up"
-								 data-aos-delay="50"
-								 data-aos-duration="1000"
-							>
-								<ellipse cx="24.5" cy="27" rx="20.5" ry="20" fill="#D7E4F2"/>
-								<path d="M48.5 17C64.2405 17 77 29.7594 77 45.5C77 61.2405 64.2405 74 48.5 74C32.7594 74 20 61.2405 20 45.5C20 29.7594 32.7594 17 48.5 17ZM48.5 20.9757C41.9958 20.9757 35.7579 23.5595 31.1587 28.1587C26.5595 32.7579 23.9757 38.9958 23.9757 45.5C23.9757 52.0042 26.5595 58.2421 31.1587 62.8413C35.7579 67.4405 41.9958 70.0242 48.5 70.0242C55.0042 70.0242 61.2421 67.4405 65.8413 62.8413C70.4405 58.2421 73.0242 52.0042 73.0242 45.5C73.0242 38.9958 70.4405 32.7579 65.8413 28.1587C61.2421 23.5595 55.0042 20.9757 48.5 20.9757ZM54.3368 26.9408C56.1897 27.6413 57.9223 28.6259 59.4725 29.8592C59.8278 30.1328 60.1726 30.4244 60.507 30.7341C60.5678 30.7873 60.6267 30.8443 60.6837 30.9052C61.6185 31.7687 62.4678 32.7405 63.2202 33.7836L63.5337 34.2026C63.7142 34.4724 63.889 34.7479 64.0581 35.0291C64.1949 35.2495 64.327 35.4737 64.4543 35.7017C64.5987 35.9563 64.7374 36.2156 64.8704 36.4797C65.0186 36.7743 65.1601 37.0744 65.295 37.3804C65.3891 37.5884 65.4945 37.8021 65.58 38.0244C65.7871 38.5412 65.9743 39.0656 66.1415 39.5976L66.2897 40.1392C66.5755 41.154 66.7804 42.1899 66.9025 43.2371C66.9224 43.4252 66.9509 43.6247 66.9651 43.8099C67.024 44.4236 67.0554 45.0411 67.0592 45.6624C67.0584 46.8766 66.9468 48.0881 66.7257 49.2819L66.6117 49.9004C66.4977 50.44 66.3647 50.972 66.2127 51.4964C64.7621 50.8323 63.0578 49.8548 62.6132 48.7803C61.8038 46.8423 59.6492 45.8734 58.7714 43.3767C57.3265 39.2442 59.2445 39.3525 59.5124 36.7875C59.6378 35.5848 58.7714 35.334 57.6285 35.8242C54.9609 36.9443 54.0575 36.514 53.5188 34.5047C52.9802 32.5012 53.5188 31.9425 53.5188 31.9425C51.7005 32.142 51.6322 29.9276 52.5755 29.369C53.231 28.9928 53.7868 27.8385 54.3368 26.9408ZM46.7159 39.2214C48.3974 38.4519 49.9506 38.1755 49.7454 36.8531C49.5459 35.545 49.0728 34.5702 46.4452 34.5702C43.8174 34.5702 44.9632 38.1755 42.8085 36.0238C40.6539 33.8862 43.2788 34.4391 44.3561 33.9518C45.4362 33.4616 46.5135 31.4523 44.6268 31.3098C42.743 31.1759 43.1448 32.142 41.6628 31.5948C40.1808 31.0362 39.5082 33.53 38.562 33.1823C37.9408 32.9486 36.2735 31.6661 35.1677 30.4036C32.9113 32.3661 31.1249 34.8109 29.9408 37.557C30.2628 41.282 32.2322 43.2371 32.2322 43.2371C32.2322 43.2371 33.2439 45.6624 39.3088 48.6435C39.3088 48.6435 40.4487 48.712 39.1035 47.3297C37.7584 45.9417 36.2735 44.209 37.9578 43.3112C39.6393 42.4021 40.1153 42.479 40.52 44.1462C40.9218 45.8106 42.2727 44.8302 42.4038 43.2371C42.5406 41.6497 45.0315 39.9909 46.7159 39.2214ZM45.4334 47.5976C48.3347 47.5976 48.0639 48.501 50.3553 50.5188C52.6439 52.5252 51.4326 54.5345 50.2841 56.0621C49.1413 57.584 48.1295 59.3111 47.5908 62.4404C47.0493 65.5583 45.6357 63.3353 45.1684 62.5743C44.6952 61.8077 43.9543 61.118 44.1595 57.9288C44.3589 54.7425 42.2015 56.6178 41.4634 52.4568C40.7223 48.3015 42.5406 47.6005 45.4362 47.6005M59.6207 50.3479C60.3931 49.8548 62.2427 51.1402 61.8437 52.4939C61.4361 53.8476 60.1593 53.0839 59.5181 52.4939C58.8769 51.9068 58.8427 50.8323 59.6207 50.3479Z" fill="#004898"/>
-							</svg>
-						</li>
-						<li>
-							<p class="title"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="1500"
-							>Cross-Border Communication</p>
-							<p class="context"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="2000"
-							>
-								Managing communication<br />
-								with manufacturers and customers.
-							</p>
-						</li>
-					</ul>
-				</div>
-
-				<div class="card"
-					 data-aos="fade-up"
-					 data-aos-delay="50"
-					 data-aos-duration="1000"
-				>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
-								 data-aos="fade-up"
-								 data-aos-delay="50"
-								 data-aos-duration="1000"
-							>
-								<ellipse cx="26.5" cy="28" rx="20.5" ry="20" fill="#D7E4F2"/>
-								<path d="M34.9286 34.3448C33.4876 34.3448 32.079 33.9242 30.8808 33.1361C29.6827 32.3479 28.7489 31.2278 28.1974 29.9172C27.646 28.6066 27.5017 27.1645 27.7829 25.7731C28.064 24.3818 28.7579 23.1038 29.7768 22.1008C30.7957 21.0977 32.0939 20.4146 33.5072 20.1378C34.9205 19.8611 36.3854 20.0031 37.7167 20.546C39.048 21.0888 40.1859 22.0081 40.9864 23.1876C41.787 24.3671 42.2143 25.7538 42.2143 27.1724C42.2143 29.0747 41.4467 30.899 40.0803 32.2441C38.714 33.5892 36.8609 34.3448 34.9286 34.3448ZM34.9286 23.5862C34.2081 23.5862 33.5038 23.7965 32.9047 24.1906C32.3056 24.5847 31.8387 25.1447 31.563 25.8C31.2873 26.4553 31.2151 27.1764 31.3557 27.8721C31.4963 28.5677 31.8432 29.2067 32.3527 29.7082C32.8621 30.2098 33.5112 30.5513 34.2179 30.6897C34.9245 30.8281 35.657 30.7571 36.3226 30.4856C36.9883 30.2142 37.5572 29.7546 37.9575 29.1648C38.3578 28.5751 38.5714 27.8817 38.5714 27.1724C38.5714 26.2213 38.1876 25.3091 37.5045 24.6366C36.8213 23.964 35.8947 23.5862 34.9286 23.5862ZM64.0714 34.3448C62.6305 34.3448 61.2218 33.9242 60.0237 33.1361C58.8256 32.3479 57.8917 31.2278 57.3403 29.9172C56.7889 28.6066 56.6446 27.1645 56.9257 25.7731C57.2068 24.3818 57.9007 23.1038 58.9197 22.1008C59.9386 21.0977 61.2368 20.4146 62.6501 20.1378C64.0633 19.8611 65.5283 20.0031 66.8596 20.546C68.1908 21.0888 69.3287 22.0081 70.1293 23.1876C70.9298 24.3671 71.3571 25.7538 71.3571 27.1724C71.3571 29.0747 70.5895 30.899 69.2232 32.2441C67.8569 33.5892 66.0037 34.3448 64.0714 34.3448ZM64.0714 23.5862C63.3509 23.5862 62.6466 23.7965 62.0476 24.1906C61.4485 24.5847 60.9816 25.1447 60.7059 25.8C60.4301 26.4553 60.358 27.1764 60.4986 27.8721C60.6391 28.5677 60.9861 29.2067 61.4955 29.7082C62.005 30.2098 62.6541 30.5513 63.3607 30.6897C64.0674 30.8281 64.7998 30.7571 65.4655 30.4856C66.1311 30.2142 66.7001 29.7546 67.1004 29.1648C67.5006 28.5751 67.7143 27.8817 67.7143 27.1724C67.7143 26.2213 67.3305 25.3091 66.6473 24.6366C65.9641 23.964 65.0376 23.5862 64.0714 23.5862ZM67.7143 72H60.4286C59.4624 72 58.5359 71.6222 57.8527 70.9496C57.1695 70.2771 56.7857 69.3649 56.7857 68.4138V55.8621H60.4286V68.4138H67.7143V52.2759H71.3571V41.5172C71.3571 41.0417 71.1652 40.5856 70.8237 40.2493C70.4821 39.9131 70.0188 39.7241 69.5357 39.7241H57.8421L49.5 54.069L41.1579 39.7241H29.4643C28.9812 39.7241 28.5179 39.9131 28.1763 40.2493C27.8348 40.5856 27.6429 41.0417 27.6429 41.5172V52.2759H31.2857V68.4138H38.5714V55.8621H42.2143V68.4138C42.2143 69.3649 41.8305 70.2771 41.1473 70.9496C40.4641 71.6222 39.5376 72 38.5714 72H31.2857C30.3196 72 29.393 71.6222 28.7098 70.9496C28.0267 70.2771 27.6429 69.3649 27.6429 68.4138V55.8621C26.6767 55.8621 25.7501 55.4842 25.067 54.8117C24.3838 54.1391 24 53.227 24 52.2759V41.5172C24 40.0906 24.5757 38.7223 25.6005 37.7135C26.6252 36.7047 28.0151 36.1379 29.4643 36.1379H43.2707L49.5 46.8966L55.7293 36.1379H69.5357C70.9849 36.1379 72.3748 36.7047 73.3995 37.7135C74.4243 38.7223 75 40.0906 75 41.5172V52.2759C75 53.227 74.6162 54.1391 73.933 54.8117C73.2499 55.4842 72.3233 55.8621 71.3571 55.8621V68.4138C71.3571 69.3649 70.9733 70.2771 70.2902 70.9496C69.607 71.6222 68.6804 72 67.7143 72Z" fill="#004898"/>
-							</svg>
-						</li>
-						<li>
-							<p class="title"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="1500"
-							>Partner Identification</p>
-							<p class="context"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="2000"
-							>
-								Identifying, evaluating, and contracting<br />
-								regional distributors
-							</p>
-						</li>
-					</ul>
-				</div>
-
-				<div class="card"
-					 data-aos="fade-up"
-					 data-aos-delay="50"
-					 data-aos-duration="1000"
-				>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
-								 data-aos="fade-up"
-								 data-aos-delay="50"
-								 data-aos-duration="1000"
-							>
-								<circle cx="28" cy="33" r="22" fill="#D7E4F2"/>
-								<path d="M36.0001 65.3333H54.6668M54.6668 65.3333V59.5H24.9168C24.3755 59.5 24.1048 59.5 23.8785 59.5467C23.4259 59.6365 23.0102 59.8584 22.6837 60.1844C22.3573 60.5104 22.1348 60.9259 22.0445 61.3783C22.0001 61.6047 22.0001 61.8753 22.0001 62.4167C22.0001 62.958 22.0001 63.231 22.0468 63.455C22.1366 63.9075 22.3585 64.3233 22.6845 64.6497C23.0106 64.9762 23.426 65.1986 23.8785 65.289C24.1048 65.3333 24.3755 65.3333 24.9168 65.3333H26.6668M54.6668 65.3333H59.3335M54.6668 65.3333V46.6667C54.6668 44.4663 54.6668 43.3673 55.3505 42.6837C56.0341 42 57.1331 42 59.3335 42H61.0485C63.6291 42 64.9218 42 65.9905 42.6067C67.0591 43.2133 67.7241 44.317 69.0518 46.5313L72.0035 51.45C72.6638 52.5513 72.9951 53.102 73.1631 53.7133C73.3311 54.3247 73.3335 54.9663 73.3335 56.252V60.6667C73.3335 62.867 73.3335 63.966 72.6498 64.6497C71.9661 65.3333 70.8671 65.3333 68.6668 65.3333M59.3335 65.3333C59.3335 66.571 59.8251 67.758 60.7003 68.6332C61.5755 69.5083 62.7624 70 64.0001 70C65.2378 70 66.4248 69.5083 67.3 68.6332C68.1751 67.758 68.6668 66.571 68.6668 65.3333M59.3335 65.3333C59.3335 64.0957 59.8251 62.9087 60.7003 62.0335C61.5755 61.1583 62.7624 60.6667 64.0001 60.6667C65.2378 60.6667 66.4248 61.1583 67.3 62.0335C68.1751 62.9087 68.6668 64.0957 68.6668 65.3333M72.1668 53.6667H66.3335C64.1331 53.6667 63.0341 53.6667 62.3505 52.983C61.6668 52.2993 61.6668 51.2003 61.6668 49V47.8333" stroke="#004898" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-								<path d="M40.0834 35V53.6667M30.7501 53.6667V35M36.0001 65.3333C36.0001 66.571 35.5084 67.758 34.6332 68.6332C33.7581 69.5083 32.5711 70 31.3334 70C30.0957 70 28.9088 69.5083 28.0336 68.6332C27.1584 67.758 26.6668 66.571 26.6668 65.3333C26.6668 64.0957 27.1584 62.9087 28.0336 62.0335C28.9088 61.1583 30.0957 60.6667 31.3334 60.6667C32.5711 60.6667 33.7581 61.1583 34.6332 62.0335C35.5084 62.9087 36.0001 64.0957 36.0001 65.3333ZM22.4738 39.788C22.1546 41.2819 21.9958 42.8057 22.0001 44.3333C22.0001 45.9363 22.1681 47.4693 22.4738 48.8787C22.8704 50.6917 23.0664 51.5993 24.3474 52.6353C25.6308 53.6667 26.9188 53.6667 29.4948 53.6667H41.3388C43.9148 53.6667 45.2028 53.6667 46.4861 52.633C47.7694 51.5993 47.9654 50.6917 48.3598 48.8763C48.6654 47.4693 48.8334 45.9363 48.8334 44.3333C48.8334 42.7303 48.6654 41.1973 48.3598 39.788C47.9631 37.9727 47.7671 37.0673 46.4861 36.0313C45.2028 35 43.9148 35 41.3388 35H29.4948C26.9188 35 25.6308 35 24.3474 36.0337C23.0641 37.0673 22.8681 37.9703 22.4738 39.788Z" stroke="#004898" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-							</svg>
-						</li>
-						<li>
-							<p class="title"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="1500"
-							>Sales & Logistics Management</p>
-							<p class="context"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="2000"
-							>
-								Supporting day-to-day sales and marketing activities
-							</p>
-						</li>
-					</ul>
-				</div>
-
-				<div class="card"
-					 data-aos="fade-up"
-					 data-aos-delay="50"
-					 data-aos-duration="1000"
-				>
-					<ul>
-						<li>
-							<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"
-								 data-aos="fade-up"
-								 data-aos-delay="50"
-								 data-aos-duration="1000"
-							>
-								<circle cx="52" cy="26" r="22" fill="#D7E4F2"/>
-								<path fill-rule="evenodd" clip-rule="evenodd" d="M17.3684 23V45.7369L34.421 36.5V45.7369L51.4737 36.3954V49.1674C50.0865 48.7758 48.6519 48.5777 47.2105 48.579C38.5775 48.579 31.579 55.5775 31.579 64.2105C31.579 66.7691 32.1937 69.184 33.2834 71.3159H6V23H17.3684ZM43.2238 73.3267C42.3171 71.3191 41.7084 68.6317 41.561 65.6316H37.3639C37.8583 69.0885 40.1301 71.972 43.2238 73.3267ZM45.7883 72.0998C45.0807 70.5075 44.55 68.2549 44.407 65.6316H50.0142C49.871 68.2549 49.3405 70.5075 48.6328 72.0998C48.2149 73.0399 47.791 73.6248 47.4638 73.9361C47.3475 74.047 47.2633 74.106 47.2105 74.1364C47.1579 74.106 47.0737 74.047 46.9573 73.9361C46.6302 73.6248 46.2061 73.0399 45.7883 72.0998ZM45.7883 56.3213C45.0807 57.9136 44.55 60.1662 44.407 62.7895H50.0142C49.871 60.1662 49.3405 57.9136 48.6328 56.3213C48.2149 55.3811 47.791 54.7963 47.4638 54.4849C47.3475 54.3742 47.2633 54.3152 47.2105 54.2847C47.1579 54.3152 47.0737 54.3742 46.9573 54.4849C46.6302 54.7963 46.2061 55.3811 45.7883 56.3213ZM51.1974 73.3267C52.1041 71.3191 52.7127 68.6317 52.8601 65.6316H57.0572C56.5627 69.0885 54.291 71.972 51.1974 73.3267ZM52.8601 62.7895H57.0572C56.5627 59.3327 54.291 56.4492 51.1974 55.0943C52.1041 57.102 52.7127 59.7893 52.8601 62.7895ZM37.3639 62.7895H41.561C41.7084 59.7893 42.3171 57.102 43.2238 55.0943C40.1301 56.4492 37.8583 59.3327 37.3639 62.7895ZM47.2105 77C54.274 77 60 71.274 60 64.2105C60 57.1471 54.274 51.421 47.2105 51.421C40.1471 51.421 34.421 57.1471 34.421 64.2105C34.421 71.274 40.1471 77 47.2105 77Z" fill="#004898"/>
-							</svg>
-						</li>
-						<li>
-							<p class="title"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="1500"
-							>Local Market Entry</p>
-							<p class="context"
-							   data-aos="fade-up"
-							   data-aos-delay="50"
-							   data-aos-duration="2000"
-							>
-								Coordinating market<br />
-								entry strategies with local partners.
-							</p>
-						</li>
-					</ul>
-				</div>
-
-			</div>
-
-			<div class="section02_03"
-				 data-aos="fade-up"
-				 data-aos-delay="50"
-				 data-aos-duration="1000"
-			>
-				<div class="context"
-					 data-aos="fade-up"
-					 data-aos-delay="50"
-					 data-aos-duration="1500"
-				>
-					This model allows manufacturers to focus on product development and quality,
-					while regional partners deliver localized sales and customer support.
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-
-</main>
-
-	<footer>
-	<div class="container">
-		<div class="header">
-			<div class="title fl_left">MEDIVIS</div>
-			<div class="fMenu fl_right">
-				<ul>
-					<li class="fl_left" onclick="location.href='/medivis/about'">ABOUT US</li>
-					<li class="fl_left" onclick="location.href='/medivis/today'">BUSINESS</li>
-					<li class="fl_left" onclick="location.href='/medivis/about'">PRODUCT</li>
-					<li class="fl_left" onclick="location.href='/medivis/inquiry'">CONTACT US</li>
-				</ul>
-			</div>
-		</div>
-
-		<div class="body mt30">
-			<ul>
-				<li class="fl_left pr15" onclick="location.href='/medivis/policy/privacy'">PRIVACY POLICY</li>
-				<li class="fl_left pr15">|</li>
-				<li class="fl_left" onclick="location.href='/medivis/policy/termsuse'">TERTMS OF USE</li>
-			</ul>
-		</div>
-
-		<div class="footer mt30">
-			<ul class="clear mt10">
-				<li class="fl_left pr15">Business Name : MEDIVIS</li>
-				<li class="fl_left pr15">|</li>
-				<li class="fl_left pr15">CEO : HYUN SUB CHUNG</li>
-				<li class="fl_left pr15">|</li>
-				<li class="fl_left">E-mail : info@medivis.co.kr</li>
-			</ul>
-			<ul class="clear mt10">
-				<li class="fl_left pr15">Address : Bldg. B, Suite 908, 19 Cheongcho-ro, Deogyang-gu, Goyang-si, Gyeonggi-do, 10542, Republic of Korea (IS Biz Tower Central Phase 2)</li>
-			</ul>
-			<ul class="clear mt10">
-				<li class="fl_left pr15">Copyright © 2026 MEDIVIS Inc. CORPORATION All rights reserved.</li>
-			</ul>
-		</div>
-	</div>
-</footer>
-
-
-<script>
-function showMore(){
-
-}
-</script>
+    <section class="page-hero">
+      <div class="wrap">
+        <p class="eyebrow">Business</p>
+        <h1>Our Role Today</h1>
+        <p class="lead">MEDIVIS operates as a strategic global connector within the medical device ecosystem.</p>
+      </div>
+    </section>
+    <section class="section">
+      <div class="wrap">
+        <div class="grid-4 feature-list">
+          <div class="feature"><span class="num">01</span><h3>Cross-Border Communication</h3><p>Managing communication with manufacturers and customers.</p></div>
+          <div class="feature"><span class="num">02</span><h3>Partner Identification</h3><p>Identifying, evaluating, and contracting regional distributors.</p></div>
+          <div class="feature"><span class="num">03</span><h3>Sales &amp; Logistics Management</h3><p>Supporting day-to-day sales and marketing activities.</p></div>
+          <div class="feature"><span class="num">04</span><h3>Local Market Entry</h3><p>Coordinating market entry strategies with local partners.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-gray">
+      <div class="wrap split">
+        <div><img class="rounded" src="/common/medivis/img/today/today_img1.png" alt="" loading="lazy"></div>
+        <div><p class="lead-dark">This model allows manufacturers to focus on product development and quality, while regional partners deliver localized sales and customer support.</p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-top">
+        <img class="footer-logo" src="/common/medivis/img/logo/medivis_logo.png" alt="MEDIVIS" width="140" height="24">
+        <ul class="footer-nav"><li><a href="/medivis/about/">About Us</a></li><li><a href="/medivis/today/">Business</a></li><li><a href="/medivis/product/xray/">Products</a></li><li><a href="/medivis/inquiry/">Contact Us</a></li></ul>
+      </div>
+      <div class="footer-info">
+        <p><span>Business Name : MEDIVIS</span><span>CEO : HYUN SUB CHUNG</span><span>E-mail : <a href="mailto:info@medivis.co.kr">info@medivis.co.kr</a></span></p>
+        <p>Address : Bldg. B, Suite 908, 19 Cheongcho-ro, Deogyang-gu, Goyang-si, Gyeonggi-do, 10542, Republic of Korea (IS Biz Tower Central Phase 2)</p>
+      </div>
+      <div class="footer-bottom">
+        <p>Copyright © 2026 MEDIVIS Inc. All rights reserved.</p>
+        <p><a href="/medivis/policy/privacy/">Privacy Policy</a><a href="/medivis/policy/termsuse/">Terms of Use</a></p>
+      </div>
+    </div>
+  </footer>
+  <script src="/assets/site.js?v=202611050648"></script>
 </body>
-
-
 </html>

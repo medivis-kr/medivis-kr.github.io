@@ -1,0 +1,39 @@
+{
+  "lines": [
+    {
+      "key": "xray",
+      "name": "X-Ray",
+      "intro": "Advanced X-ray imaging systems with proven expertise in diagnostic technology.",
+      "hero": "/common/medivis/img/main/section02_01.png",
+      "categories": [
+        { "key": "Digital", "name": "Digital System" },
+        { "key": "Analog", "name": "Analog System" },
+        { "key": "Mobile", "name": "Mobile System" },
+        { "key": "Mammography", "name": "Mammography System" },
+        { "key": "Software", "name": "Software" }
+      ]
+    },
+    {
+      "key": "endoscopy",
+      "name": "Endoscopy",
+      "intro": "Innovative endoscopy systems designed for minimally invasive medical procedures.",
+      "hero": "/common/medivis/img/mission/mission_01.png",
+      "categories": [
+        { "key": "Imaging", "name": "Imaging Solution" },
+        { "key": "Light", "name": "Light Source" },
+        { "key": "GAS", "name": "GAS Insufflator" },
+        { "key": "Integrated", "name": "Integrated" },
+        { "key": "Target", "name": "Target" }
+      ]
+    }
+  ],
+  "products": [
+    { "id": 88, "line": "xray", "category": "Digital", "name": "INNOVISION DXII (Floor Type)", "image": "/uploads/product/1772001174568_aaa.png", "detail": "/uploads/product_board/1772080943857_aaa.png" },
+    { "id": 89, "line": "xray", "category": "Analog", "name": "AccuRay D5/D6", "image": "/uploads/product/1772605229059_AccuRay.png", "detail": "/uploads/product_board/1772605305798_AccuRay_D5D6.png" },
+    { "id": 93, "line": "xray", "category": "Mobile", "name": "INNOVISION P5", "image": "/uploads/product/1772605537840_INNOVISION_P5.png", "detail": "/uploads/product_board/1772605560886_INNOVISION_P5.png" },
+    { "id": 91, "line": "xray", "category": "Mammography", "name": "ELMA-T3", "image": "/uploads/product/1772605413215_ELMA-T3.png", "detail": "/uploads/product_board/1772605444662_ELMA-T3.png" },
+    { "id": 94, "line": "endoscopy", "category": "Imaging", "name": "IRIS-4K", "image": "/uploads/product/1772605578153_IRIS-4K.png", "detail": "/uploads/product_board/1772605599050_IRIS-4K.png" },
+    { "id": 95, "line": "endoscopy", "category": "Light", "name": "MS-LED", "image": "/uploads/product/1772605620764_MS-LED.png", "detail": "/uploads/product_board/1772605642178_MS-LED.png" },
+    { "id": 92, "line": "endoscopy", "category": "Integrated", "name": "FENCER III", "image": "/uploads/product/1772605463530_FENCER_III.png", "detail": "/uploads/product_board/1772605505273_FENCER_III.png" }
+  ]
+}
