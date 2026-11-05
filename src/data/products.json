@@ -137,7 +137,9 @@
    ],
    "imageFit": "photo",
    "imageBg": "#dddee0",
-   "_image_source": "DK 장비 사진/New T5/NEW ELIN RENDERING/silver/NEW ELIN_RENDERING_2.jpg (cropped)"
+   "_image_source": "DK 장비 사진/New T5/NEW ELIN RENDERING/silver/NEW ELIN_RENDERING_2.jpg (cropped)",
+   "heroImage": "/uploads/product/elin-t5-system.png",
+   "_hero_source": "Showcase 1.5 slide 5 cutout"
   },
   {
    "id": 97,
@@ -203,7 +205,8 @@
    ],
    "imageFit": "photo",
    "imageBg": "#F4F5F7",
-   "heroImage": "/uploads/product/elin-t4-detail.png"
+   "heroImage": "/uploads/product/elin-t4-system.png",
+   "_hero_source": "Showcase 1.5 slide 7 cutout"
   },
   {
    "id": 98,
@@ -269,7 +272,8 @@
    ],
    "imageFit": "photo",
    "imageBg": "#F4F5F7",
-   "heroImage": "/uploads/product/elin-t3-detail.png"
+   "heroImage": "/uploads/product/elin-t3-system.png",
+   "_hero_source": "Showcase 1.5 slide 9 (edited 11/6), white background removed"
   },
   {
    "id": 88,
