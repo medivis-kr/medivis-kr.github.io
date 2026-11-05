@@ -9,6 +9,14 @@
 - `tools/serve.js`: 로컬 미리보기 `node tools/serve.js` → http://localhost:8090
 - `mirror-log.txt`: 복사할 때 받은 URL과 응답코드 (`/logo192.png`, `bg_section01.png`, `/a`는 실제 사이트에서도 404였음)
 
+## 페이지 수정 (2026-11-05 리뉴얼 이후)
+- 모든 HTML은 `node tools/build.js`가 만듭니다. `docs/`의 HTML을 직접 고치면 다음 빌드 때 덮어써집니다.
+- 제품 추가/수정: `src/data/products.json` (목록 사진은 `docs/uploads/product/`, 상세 이미지는 `docs/uploads/product_board/`)
+- 페이지 문구·구성: `tools/build.js`의 각 `pages[...]` 블록. 약관 본문: `src/content/*.html`
+- 디자인: `docs/assets/site.css` (브랜드 컬러 변수는 맨 위 `:root`), 동작: `docs/assets/site.js`
+- 확인: `node tools/serve.js` → http://localhost:8090, 그다음 commit/push
+- `tools/mirror.js`·`postprocess.js`는 최초 이관 때만 쓴 도구라 다시 실행하지 않습니다.
+
 ## 바뀐 점
 - **관리자 화면(/common/admin)이 없습니다.** 내용을 고치려면 `docs/` 안의 HTML을 직접 수정한 뒤 commit/push 합니다.
 - **문의하기 폼**은 FormSubmit(formsubmit.co, 무료)을 거쳐 `info@medivis.co.kr`로 메일이 갑니다.
