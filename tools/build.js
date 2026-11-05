@@ -100,32 +100,28 @@ const productCard = p => `
 
 // Structured detail (specs table, feature rows, highlight cards) for products without a detail board image.
 function productDetail(p) {
-  const tabsList = [p.specs && ['specs', 'Key Specifications'], p.features && ['features', 'Features'],
-    ...(p.highlights || []).map((h, i) => [`hl-${i}`, h.title.split(' – ')[0]])].filter(Boolean);
-  return tabs(tabsList) + (p.specs ? `
-    <section class="section" id="specs">
-      <div class="wrap">
-        <h2>Key Specifications</h2>
-        ${p.intro ? `<p class="lead-dark intro">${esc(p.intro)}</p>` : ''}
-        <table class="spec-table">${p.specs.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</table>
-      </div>
-    </section>` : '') + (p.features ? `
-    <section class="section section-gray" id="features">
-      <div class="wrap">
-        <h2>Features</h2>${p.features.map((f, i) => `
+  // Order: Features, highlight blocks, then Key Specifications last; backgrounds alternate gray/white.
+  const blocks = [];
+  if (p.features) blocks.push(['features', 'Features', `
+        <h2>Features</h2>
+        ${p.intro ? `<p class="lead-dark intro">${esc(p.intro)}</p>` : ''}${p.features.map((f, i) => `
         <div class="feature-row${i % 2 ? ' is-reverse' : ''}">
           <div class="feature-media"><img src="${f.image}" alt="${esc(f.title)}" loading="lazy"></div>
           <div class="feature-copy">${f.label ? `<p class="eyebrow">${esc(f.label)}</p>` : ''}<h3>${esc(f.title)}</h3>${f.text ? `<p>${esc(f.text)}</p>` : ''}</div>
-        </div>`).join('')}
-      </div>
-    </section>` : '') + (p.highlights || []).map((h, i) => `
-    <section class="section${i % 2 ? ' section-gray' : ''}" id="hl-${i}">
-      <div class="wrap">
+        </div>`).join('')}`]);
+  (p.highlights || []).forEach((h, i) => blocks.push([`hl-${i}`, h.title.split(' – ')[0], `
         <h2>${esc(h.title)}</h2>
         ${h.lead ? `<p class="lead-dark intro">${esc(h.lead)}</p>` : ''}
         <div class="grid-${h.items.length > 3 ? 3 : h.items.length} feature-list">${h.items.map(([t, d], k) => `
           <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join('')}
-        </div>
+        </div>`]));
+  if (p.specs) blocks.push(['specs', 'Key Specifications', `
+        <h2>Key Specifications</h2>
+        ${p.intro && !p.features ? `<p class="lead-dark intro">${esc(p.intro)}</p>` : ''}
+        <table class="spec-table">${p.specs.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</table>`]);
+  return tabs(blocks.map(([id, label]) => [id, label])) + blocks.map(([id, , html], i) => `
+    <section class="section${i % 2 ? '' : ' section-gray'}" id="${id}">
+      <div class="wrap">${html}
       </div>
     </section>`).join('');
 }
