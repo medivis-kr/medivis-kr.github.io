@@ -200,7 +200,10 @@
      "text": "",
      "image": "/uploads/product_board/elin-t4_stitching.png"
     }
-   ]
+   ],
+   "imageFit": "photo",
+   "imageBg": "#F4F5F7",
+   "heroImage": "/uploads/product/elin-t4-ceiling-full.png"
   },
   {
    "id": 98,
@@ -263,7 +266,10 @@
       ]
      ]
     }
-   ]
+   ],
+   "imageFit": "photo",
+   "imageBg": "#F4F5F7",
+   "heroImage": "/uploads/product/elin-t3-ceiling-full.png"
   },
   {
    "id": 88,
