@@ -150,7 +150,7 @@ br.pc { display: inline; }
 .product-img-lg { aspect-ratio: 1 / 1; }
 /* full photo with its own white background (e.g. room renders): fill the tile instead of floating on gray */
 .product-img.is-photo { background: #fff; padding: 0; }
-.product-card .product-img.is-photo img { width: 100%; height: 100%; max-height: none; object-fit: cover; }
+.product-card .product-img.is-photo img, .line-card .product-img.is-photo img { width: 100%; height: 100%; max-height: none; object-fit: cover; }
 .product-img-lg.is-photo img { width: 100%; }
 .badge { display: inline-block; margin-right: 8px; padding: 3px 9px; font-size: 12px; font-weight: 700; letter-spacing: .06em; color: #fff; background: var(--cyan); vertical-align: middle; }
 .product-top .badge { margin-bottom: 16px; }

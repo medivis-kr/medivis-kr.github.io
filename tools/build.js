@@ -170,7 +170,7 @@ pages['index.html'] = layout({
           const first = data.products.find(p => p.line === l.key && p.category === c.key);
           return first ? `
           <a class="line-card" href="/medivis/product/${l.key}/#cat-${c.key}">
-            <div class="product-img"><img src="${first.image}" alt="${esc(c.name)}" loading="lazy"></div>
+            <div class="product-img${first.imageFit === 'photo' ? ' is-photo' : ''}"${first.imageBg ? ` style="background:${first.imageBg}"` : ''}><img src="${first.image}" alt="${esc(c.name)}" loading="lazy"></div>
             <h3>${esc(c.name)}</h3>
           </a>` : ''; })).join('')}
         </div>
