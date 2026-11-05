@@ -95,9 +95,41 @@ const tabs = items => `
 const productCard = p => `
           <a class="product-card" href="${productUrl(p)}">
             <div class="product-img"><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
-            <h3>${esc(p.name)}</h3>
+            <h3>${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${esc(p.name)}</h3>
             <p>${esc(catName(p.line, p.category))}</p>
           </a>`;
+
+// Structured detail (specs table, feature rows, highlight cards) for products without a detail board image.
+function productDetail(p) {
+  const tabsList = [p.specs && ['specs', 'Key Specifications'], p.features && ['features', 'Features'],
+    ...(p.highlights || []).map((h, i) => [`hl-${i}`, h.title.split(' – ')[0]])].filter(Boolean);
+  return tabs(tabsList) + (p.specs ? `
+    <section class="section" id="specs">
+      <div class="wrap">
+        <h2>Key Specifications</h2>
+        ${p.intro ? `<p class="lead-dark intro">${esc(p.intro)}</p>` : ''}
+        <table class="spec-table">${p.specs.map(([k, v]) => `<tr><th>${esc(k)}</th><td>${esc(v)}</td></tr>`).join('')}</table>
+      </div>
+    </section>` : '') + (p.features ? `
+    <section class="section section-gray" id="features">
+      <div class="wrap">
+        <h2>Features</h2>${p.features.map((f, i) => `
+        <div class="feature-row${i % 2 ? ' is-reverse' : ''}">
+          <div class="feature-media"><img src="${f.image}" alt="${esc(f.title)}" loading="lazy"></div>
+          <div class="feature-copy">${f.label ? `<p class="eyebrow">${esc(f.label)}</p>` : ''}<h3>${esc(f.title)}</h3>${f.text ? `<p>${esc(f.text)}</p>` : ''}</div>
+        </div>`).join('')}
+      </div>
+    </section>` : '') + (p.highlights || []).map((h, i) => `
+    <section class="section${i % 2 ? ' section-gray' : ''}" id="hl-${i}">
+      <div class="wrap">
+        <h2>${esc(h.title)}</h2>
+        ${h.lead ? `<p class="lead-dark intro">${esc(h.lead)}</p>` : ''}
+        <div class="grid-${h.items.length > 3 ? 3 : h.items.length} feature-list">${h.items.map(([t, d], k) => `
+          <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join('')}
+        </div>
+      </div>
+    </section>`).join('');
+}
 
 // ---------- pages ----------
 const pages = {};
@@ -304,16 +336,18 @@ for (const p of data.products) {
       <div class="wrap split">
         <div>
           <p class="crumbs"><a href="/medivis/product/${line.key}/">${esc(line.name)}</a> / <a href="/medivis/product/${line.key}/#cat-${p.category}">${esc(catName(p.line, p.category))}</a></p>
+          ${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}
           <h1>${esc(p.name)}</h1>
-          <p class="lead-dark">${esc(catName(p.line, p.category))}</p>
+          <p class="lead-dark">${esc(p.tagline || catName(p.line, p.category))}</p>
+          ${p.target ? `<p class="target">${esc(p.target)}</p>` : ''}
           <div class="btns"><a class="btn" href="/medivis/inquiry/">Product Inquiry</a><a class="btn btn-ghost" href="/medivis/product/${line.key}/">Back to List</a></div>
         </div>
         <div class="product-img product-img-lg"><img src="${p.image}" alt="${esc(p.name)}"></div>
       </div>
-    </section>
+    </section>` + (p.detail ? `
     <section class="section">
       <div class="wrap detail-board"><img src="${p.detail}" alt="${esc(p.name)} details" loading="lazy"></div>
-    </section>`,
+    </section>` : productDetail(p)),
   });
 }
 

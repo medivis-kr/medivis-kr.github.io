@@ -28,6 +28,63 @@
     }
   ],
   "products": [
+    {
+      "id": 96, "line": "xray", "category": "Digital", "name": "INNOVISION EXII (Ceiling Type-ELIN T5)", "badge": "NEW",
+      "image": "/uploads/product/elin-t5.png",
+      "_source": "MEDIVIS Product Showcase 1.5, slides 4-6 and 10 (Elin-T5); images from DK '장비 사진/New T5'",
+      "tagline": "Full Auto-Positioning & Integrated Touchscreen LCD Handlebar.",
+      "target": "Premium centers requiring high-volume automated exams & spine stitching.",
+      "specs": [
+        ["System Concept", "Full Auto-Positioning"],
+        ["Positioning Drive", "1-Touch motorized pre-set alignment"],
+        ["Tube - Bucky Sync", "Fully Integrated Multi-axis Auto-Sync"],
+        ["Spine / Leg Stitching", "Whole Spine Auto-Stitching"],
+        ["Handlebar Interface", "Integrated Touchscreen LCD Unit"],
+        ["Key Advantage", "Maximum Patient Throughput & Precision"]
+      ],
+      "features": [
+        { "label": "Auto-Positioning", "title": "One-Touch Preset Alignment", "text": "One-touch motorized drive aligns the ceiling tube and detector stand seamlessly to pre-programmed clinical exam angles.", "image": "/uploads/product_board/elin-t5_one-touch.png" },
+        { "label": "Bucky Synchronization", "title": "Motorized Tube Tracking", "text": "Motorized synchronization locks the X-ray tube focal spot with vertical table/wall Bucky movements for zero-effort centermost alignment.", "image": "/uploads/product_board/elin-t5_tube-tracking.png" },
+        { "label": "Wholespine Auto-Stitching", "title": "Long Bone & Spine Imaging", "text": "Automated multi-shot image stitching captures full-spine and long-leg studies in standing positions with high diagnostic precision.", "image": "/uploads/product_board/elin-t5_stitching.png" },
+        { "label": "Handlebar Interface", "title": "Integrated Touchscreen LCD Handlebar", "text": "", "image": "/uploads/product_board/elin-t5_handlebar.png" }
+      ],
+      "_highlights_source": "DK 'Design strategy-gui.pdf' (장비 사진/New T5), pp.4-7, 13-14, 23-25; Korean points translated, competitor research and undecided A/B/C concepts left out",
+      "highlights": [
+        { "title": "THU – Touchscreen Handlebar GUI", "lead": "Bold & Minimalism × Bezelless: a simple, premium style that makes the screen feel wider.", "items": [
+          ["Bezelless Display", "A bezelless design that makes the screen look larger than it is."],
+          ["Dark & Spatial Background", "A deep background that blends seamlessly with the bezel."],
+          ["Rich Preview Graphics", "Rich, realistic images of the system’s movement."],
+          ["Clear Control Layout", "Preview, Control and Status bar areas, with functions grouped by category and clear, dimensional control buttons."],
+          ["Focused Highlights", "Restrained shapes and colors, color-grouped information, and emphasis only on highlighted controls."]
+        ] },
+        { "title": "ELUI – Imaging Software", "lead": "A modular interface built around the image.", "items": [
+          ["Modular Structure", "Designed as a modular structure."],
+          ["Tools / Image / Status Bar", "Clearly separated Tools, Image and Status bar areas for a maximized image view."]
+        ] }
+      ]
+    },
+    {
+      "id": 97, "line": "xray", "category": "Digital", "name": "INNOVISION DXII (Ceiling Type-ELIN T4)",
+      "image": "/uploads/product/elin-t4.png",
+      "_source": "MEDIVIS Product Showcase 1.5, slides 4, 7-8 and 10 (Elin-T4)",
+      "tagline": "Motorized Vertical Movement & Automated Bucky Synchronization.",
+      "target": "Designed for busy radiology rooms focused on ergonomic operator comfort.",
+      "intro": "Multi-axis motorized tracking movements streamline positioning for fast, strain-free radiographer operation.",
+      "specs": [
+        ["System Concept", "Motorized Auto-Tracking"],
+        ["Positioning Drive", "Motorized vertical & longitudinal tracking"],
+        ["Tube - Bucky Sync", "Automated Vertical Wall Bucky Sync"],
+        ["Spine / Leg Stitching", "Automated Spine Stitching"],
+        ["Handlebar Interface", "LCD Touchscreen Panel"],
+        ["Key Advantage", "Strain-Free Rapid Radiographer Workflow"]
+      ],
+      "features": [
+        { "label": "Operator Efficiency", "title": "Vertical Wall Bucky Sync", "text": "", "image": "/uploads/product_board/elin-t4_wall-bucky.png" },
+        { "label": "Operator Efficiency", "title": "Table Horizontal Tracking", "text": "", "image": "/uploads/product_board/elin-t4_table-tracking.png" },
+        { "label": "Operator Efficiency", "title": "Ceiling Tube Vertical Tracking", "text": "", "image": "/uploads/product_board/elin-t4_tube-vertical.png" },
+        { "label": "Spine / Leg Stitching", "title": "Automated Spine Stitching", "text": "", "image": "/uploads/product_board/elin-t4_stitching.png" }
+      ]
+    },
     { "id": 88, "line": "xray", "category": "Digital", "name": "INNOVISION DXII (Floor Type)", "image": "/uploads/product/1772001174568_aaa.png", "detail": "/uploads/product_board/1772080943857_aaa.png" },
     { "id": 89, "line": "xray", "category": "Analog", "name": "AccuRay D5/D6", "image": "/uploads/product/1772605229059_AccuRay.png", "detail": "/uploads/product_board/1772605305798_AccuRay_D5D6.png" },
     { "id": 93, "line": "xray", "category": "Mobile", "name": "INNOVISION P5", "image": "/uploads/product/1772605537840_INNOVISION_P5.png", "detail": "/uploads/product_board/1772605560886_INNOVISION_P5.png" },
