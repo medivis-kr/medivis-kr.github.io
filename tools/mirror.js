@@ -21,7 +21,7 @@ function extract(text, isCss, from) {
   for (const m of text.matchAll(/location\.(?:href|replace)\s*(?:=|\()\s*["']([^"']+)["']/g)) add(m[1]);
   for (const m of text.matchAll(/["'](\/(?:uploads|common|medivis)\/[^"'\s)]+)["']/g)) add(m[1]);
   for (const m of text.matchAll(/productView\(\s*['"]?([^'",)]+)['"]?\s*,\s*['"]?([^'")]+)['"]?\s*\)/g)) add(`/medivis/product/view/${m[1].trim()}/${m[2].trim()}`);
-  for (const m of text.matchAll(/mMove\(\s*['"]([^'"]+)['"]\s*\)/g)) add(`/medivis/product/xray/${m[1]}`);
+  for (const m of text.matchAll(/mMove\(\s*['"]([^'"]+)['"]\s*\)/g)) add(`/medivis/product/${from.includes('endoscopy') ? 'endoscopy' : 'xray'}/${m[1]}`);
   return out;
 }
 function outFile(p) {
