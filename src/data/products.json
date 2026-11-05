@@ -86,9 +86,9 @@
       ]
     },
     {
-      "id": 98, "line": "xray", "category": "Digital", "name": "ELIN T3 Plus (Ceiling Type)",
-      "image": "/uploads/product/elin-t3-ceiling.png",
-      "_source": "MEDIVIS Product Showcase 1.5, slides 4, 9 and 10 (Elin-T3 Plus); list image = slide 4 ceiling photo, room image = slide 9",
+      "id": 98, "line": "xray", "category": "Digital", "name": "INNOVISION DXII (Ceiling Type-ELIN T3 Plus)",
+      "image": "/uploads/product/elin-t3plus.jpg", "imageFit": "photo",
+      "_source": "MEDIVIS Product Showcase 1.5, slides 4, 9 and 10 (Elin-T3 Plus); list image and room image = slide 9 (edited 11/6: smaller ceiling rail), name from DK folder 2_INNOVISION DXII (Ceiling Type-ELIN T3 Plus)",
       "tagline": "Compact Ceiling Tube Suspension for flexible space utilization.",
       "target": "Ideal for small/mid-sized clinics seeking proven durability & flexible budget.",
       "specs": [

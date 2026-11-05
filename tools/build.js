@@ -94,7 +94,7 @@ const tabs = items => `
 
 const productCard = p => `
           <a class="product-card" href="${productUrl(p)}">
-            <div class="product-img"><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
+            <div class="product-img${p.imageFit === 'photo' ? ' is-photo' : ''}"><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
             <h3>${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${esc(p.name)}</h3>
             <p>${esc(catName(p.line, p.category))}</p>
           </a>`;
@@ -342,7 +342,7 @@ for (const p of data.products) {
           ${p.target ? `<p class="target">${esc(p.target)}</p>` : ''}
           <div class="btns"><a class="btn" href="/medivis/inquiry/">Product Inquiry</a><a class="btn btn-ghost" href="/medivis/product/${line.key}/">Back to List</a></div>
         </div>
-        <div class="product-img product-img-lg"><img src="${p.image}" alt="${esc(p.name)}"></div>
+        <div class="product-img product-img-lg${p.imageFit === 'photo' ? ' is-photo' : ''}"><img src="${p.image}" alt="${esc(p.name)}"></div>
       </div>
     </section>` + (p.detail ? `
     <section class="section">
