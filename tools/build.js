@@ -92,10 +92,15 @@ const tabs = items => `
     <div class="section-tabs"><div class="wrap"><ul>${items.map(([id, label]) =>
       `<li><a href="#${id}">${esc(label)}</a></li>`).join('')}</ul></div></div>`;
 
+// "INNOVISION EXII (Ceiling Type-ELIN T5)" -> model on line 1, type on line 2 (no brackets)
+const nameHtml = p => {
+  const m = p.name.match(/^(.*?)\s*\((.+)\)$/);
+  return m ? `${esc(m[1])}<span class="name-sub">${esc(m[2])}</span>` : esc(p.name);
+};
 const productCard = p => `
           <a class="product-card" href="${productUrl(p)}">
             <div class="product-img${p.imageFit === 'photo' ? ' is-photo' : ''}"${p.imageBg ? ` style="background:${p.imageBg}"` : ''}><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
-            <h3>${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${esc(p.name)}</h3>
+            <h3>${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}${nameHtml(p)}</h3>
           </a>`;
 
 // Structured detail (specs table, feature rows, highlight cards) for products without a detail board image.
@@ -331,7 +336,7 @@ for (const p of data.products) {
         <div>
           <p class="crumbs"><a href="/medivis/product/${line.key}/">${esc(line.name)}</a> / <a href="/medivis/product/${line.key}/#cat-${p.category}">${esc(catName(p.line, p.category))}</a></p>
           ${p.badge ? `<span class="badge">${esc(p.badge)}</span>` : ''}
-          <h1>${esc(p.name)}</h1>
+          <h1>${nameHtml(p)}</h1>
           <p class="lead-dark">${esc(p.tagline || catName(p.line, p.category))}</p>
           ${p.target ? `<p class="target">${esc(p.target)}</p>` : ''}
           <div class="btns"><a class="btn" href="/medivis/inquiry/">Product Inquiry</a><a class="btn btn-ghost" href="/medivis/product/${line.key}/">Back to List</a></div>
