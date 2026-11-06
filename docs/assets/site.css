@@ -121,9 +121,11 @@ br.pc { display: inline; }
 .tags li { font-size: 13px; padding: 5px 12px; border: 1px solid currentColor; opacity: .75; }
 
 /* product tiles: product photo on light gray, name underneath */
-.product-img { background: var(--gray); aspect-ratio: 4 / 3; display: flex; align-items: center; justify-content: center; padding: 8%; overflow: hidden; }
+.product-img { position: relative; background: var(--gray); overflow: hidden; }
+.product-img::before { content: ""; display: block; padding-top: 75%; }  /* 4:3 box that also works on older iOS */
 .section-gray .product-img { background: #fff; }
-.product-img img { max-height: 100%; width: auto; object-fit: contain; transition: transform .4s; }
+/* fixed box + object-fit instead of max-height:100% (iOS Safari did not shrink tall images that way) */
+.product-img img { position: absolute; top: 8%; left: 8%; width: 84%; height: 84%; max-height: none; object-fit: contain; transition: transform .4s; }
 .product-card, .line-card { display: block; }
 .product-card:hover .product-img img, .line-card:hover .product-img img { transform: scale(1.04); }
 .product-card h3 { font-size: 20px; margin-top: 20px; text-align: center; }
@@ -149,15 +151,15 @@ br.pc { display: inline; }
 .crumbs { font-size: 14px; color: var(--text); margin-bottom: 20px; }
 .crumbs a:hover { color: var(--blue); }
 .product-top h1 { font-size: clamp(32px, 4vw, 52px); font-weight: 700; margin-bottom: 12px; }
-.product-img-lg { aspect-ratio: 1 / 1; }
+.product-img-lg::before { padding-top: 100%; }
 /* screenshots above a highlight block's points, all the same height (flex = aspect ratio) */
 .hl-gallery { display: flex; gap: 24px; margin: 0 0 56px; align-items: flex-start; }
 .hl-gallery figure { margin: 0; min-width: 0; }
 .hl-gallery img { width: 100%; height: auto; display: block; border-radius: 12px; }
 /* full photo with its own white background (e.g. room renders): fill the tile instead of floating on gray */
 .product-img.is-photo { background: #fff; padding: 0; }
-.product-card .product-img.is-photo img, .line-card .product-img.is-photo img { width: 100%; height: 100%; max-height: none; object-fit: cover; }
-.product-img-lg.is-photo img { width: 100%; }
+.product-img.is-photo img { top: 0; left: 0; width: 100%; height: 100%; }
+.product-card .product-img.is-photo img, .line-card .product-img.is-photo img { object-fit: cover; }
 .badge { display: inline-block; margin-right: 8px; padding: 3px 9px; font-size: 12px; font-weight: 700; letter-spacing: .06em; color: #fff; background: var(--cyan); vertical-align: middle; }
 .product-top .badge { margin-bottom: 16px; }
 .target { margin-top: 12px; color: var(--text); }
