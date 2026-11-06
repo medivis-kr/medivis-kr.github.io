@@ -263,6 +263,11 @@ br.pc { display: inline; }
   .feature-list.grid-4 { grid-template-columns: 1fr; }
   .section-tabs ul { gap: 28px; }
   .section-tabs a { padding: 16px 0; font-size: 15px; }
+  /* product category tabs: wrap to two rows instead of hiding tabs off-screen */
+  .filter-tabs ul { flex-wrap: wrap; overflow: visible; gap: 0 24px; }
+  .filter-tabs a { padding: 12px 0; }
+  .grid-4.line-cards h3 { font-size: 17px; }
+  .line-card h3::after { white-space: nowrap; }
   .product-top { padding: 40px 0 24px; }
   .product-top .split > div:first-child { order: 2; }
   .form-grid { grid-template-columns: 1fr; }
