@@ -294,3 +294,18 @@ br.pc { display: inline; }
   .footer-info span + span::before { display: none; }
   .cta-band { padding: 72px 0; }
 }
+
+/* floating LinkedIn / WhatsApp buttons, fixed bottom-right on every page */
+.float-social { position: fixed; right: 24px; bottom: 24px; z-index: 60; display: flex; flex-direction: column; gap: 12px; }
+.float-social a { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(10, 26, 51, .22); transition: transform .2s, box-shadow .2s; }
+.float-social a:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(10, 26, 51, .28); }
+.float-social svg { width: 26px; height: 26px; fill: #fff; }
+.float-social .fs-linkedin { background: #0A66C2; }
+.float-social .fs-whatsapp { background: #25D366; }
+.float-social .fs-whatsapp svg { width: 28px; height: 28px; }
+@media (max-width: 900px) {
+  .float-social { right: 16px; bottom: 16px; gap: 10px; }
+  .float-social a { width: 46px; height: 46px; }
+  .float-social svg { width: 23px; height: 23px; }
+  .float-social .fs-whatsapp svg { width: 25px; height: 25px; }
+}
