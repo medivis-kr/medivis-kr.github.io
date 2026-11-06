@@ -269,9 +269,11 @@ br.pc { display: inline; }
   .feature-list.grid-4 { grid-template-columns: 1fr; }
   .section-tabs ul { gap: 28px; }
   .section-tabs a { padding: 16px 0; font-size: 15px; }
-  /* product category tabs: wrap to two rows instead of hiding tabs off-screen */
-  .filter-tabs ul { flex-wrap: wrap; overflow: visible; gap: 0 24px; }
-  .filter-tabs a { padding: 12px 0; }
+  /* product category tabs: one row, swiped sideways; edge-to-edge with a fade on the right as a swipe hint */
+  .filter-tabs .wrap { padding: 0; position: relative; }
+  .filter-tabs ul { flex-wrap: nowrap; overflow-x: auto; -webkit-overflow-scrolling: touch; scroll-snap-type: x proximity; gap: 24px; padding: 0 40px 0 20px; }
+  .filter-tabs li { flex: 0 0 auto; scroll-snap-align: start; scroll-margin-left: 20px; }
+  .filter-tabs .wrap::after { content: ""; position: absolute; top: 0; right: 0; bottom: 1px; width: 40px; pointer-events: none; background: linear-gradient(to right, rgba(255,255,255,0), #fff); }
   .hl-gallery { gap: 12px; margin-bottom: 36px; }
   .grid-4.line-cards h3 { font-size: 17px; }
   .line-card h3::after { white-space: nowrap; }

@@ -19,6 +19,11 @@
   var filters = [].slice.call(document.querySelectorAll('.filter-tabs a'));
   function applyFilter(key) {
     filters.forEach(function (a) { a.classList.toggle('is-active', a.dataset.filter === key); });
+    // keep the chosen tab visible in the swipeable row (mobile)
+    filters.forEach(function (a) {
+      if (a.dataset.filter === key && a.parentNode.parentNode.scrollWidth > a.parentNode.parentNode.clientWidth)
+        a.parentNode.parentNode.scrollTo({ left: a.parentNode.offsetLeft - 20, behavior: 'smooth' });
+    });
     [].forEach.call(document.querySelectorAll('.product-grid .product-card'), function (c) {
       c.hidden = c.dataset.cat !== key;
     });
