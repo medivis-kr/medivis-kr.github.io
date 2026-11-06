@@ -17,7 +17,7 @@ const NAV = [
   { label: 'About Us', href: '/medivis/about/', items: [
     ['Company Overview', '/medivis/about/'], ['Target Markets', '/medivis/marketing/'], ['Mission & Values', '/medivis/mission/']] },
   { label: 'Business', href: '/medivis/today/', items: [
-    ['Our Role Today', '/medivis/today/'], ['Partners', '/medivis/partners/']] },
+    ['Our Role Today', '/medivis/today/']] },
   { label: 'Products', href: '/medivis/product/xray/', items: data.lines.map(l => [l.name, `/medivis/product/${l.key}/`]) },
   { label: 'Contact Us', href: '/medivis/inquiry/', items: [
     ['Inquiry', '/medivis/inquiry/'], ['Office Locations', '/medivis/location/']] },
@@ -278,26 +278,8 @@ pages['medivis/today/index.html'] = layout({
     </section>`,
 });
 
-pages['medivis/partners/index.html'] = layout({
-  title: 'Partners', section: 'Business',
-  body: hero({ eyebrow: 'Business', title: 'Partners',
-    text: 'MEDIVIS currently collaborates with established medical device manufacturers to support global market access and sustainable distribution models.' }) + `
-    <section class="section">
-      <div class="wrap grid-2">
-        <div class="partner-card">
-          <div class="product-img"><img src="/common/medivis/img/partners/partners_img1.png" alt="" loading="lazy"></div>
-          <img class="partner-logo" src="/common/medivis/img/partners/h_logo_1.png" alt="DK Medical Systems" loading="lazy">
-          <p>Specializing in advanced X-ray imaging systems with proven expertise in diagnostic technology.</p>
-          <a class="text-link" href="/medivis/product/xray/">X-Ray Products</a>
-        </div>
-        <div class="partner-card">
-          <div class="product-img"><img src="/common/medivis/img/partners/partners_img2.png" alt="" loading="lazy"></div>
-          <img class="partner-logo" src="/common/medivis/img/partners/h_logo_2.png" alt="SOLENDOS" loading="lazy">
-          <p>Focused on innovative endoscopy systems designed for minimally invasive medical procedures.</p>
-        </div>
-      </div>
-    </section>`,
-});
+// Partners page removed 11/6 at the user's request; old links go to Our Role Today.
+pages['medivis/partners/index.html'] = redirect('/medivis/today/');
 
 for (const line of data.lines) {
   const cats = line.categories.filter(c => data.products.some(p => p.line === line.key && p.category === c.key));
