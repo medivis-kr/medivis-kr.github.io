@@ -7,9 +7,9 @@ const DOCS = path.join(ROOT, 'docs');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/products.json'), 'utf8'));
 const VER = new Date().toISOString().slice(0, 16).replace(/\D/g, '');   // cache-busting for site.css/js
 // Floating contact buttons (bottom-right on every page). Empty URL = button hidden.
-// WhatsApp: CEO Hyunsub Chung's contact QR (11/6). LinkedIn: waiting for the CEO's profile URL.
+// WhatsApp: CEO Hyunsub Chung's contact QR (11/6). LinkedIn: MEDIVIS company page (11/6).
 const SOCIAL = {
-  linkedin: '',
+  linkedin: 'https://www.linkedin.com/company/medivis-inc-kr/',
   whatsapp: 'https://wa.me/qr/YHCS7VIELZX6M1',
 };
 const INQUIRY_TO = 'info@medivis.co.kr';   // FormSubmit target; swap for the alias FormSubmit mails after activation
