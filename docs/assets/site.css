@@ -148,6 +148,10 @@ br.pc { display: inline; }
 .crumbs a:hover { color: var(--blue); }
 .product-top h1 { font-size: clamp(32px, 4vw, 52px); font-weight: 700; margin-bottom: 12px; }
 .product-img-lg { aspect-ratio: 1 / 1; }
+/* screenshots above a highlight block's points, all the same height (flex = aspect ratio) */
+.hl-gallery { display: flex; gap: 24px; margin: 0 0 56px; align-items: flex-start; }
+.hl-gallery figure { margin: 0; min-width: 0; }
+.hl-gallery img { width: 100%; height: auto; display: block; border-radius: 12px; }
 /* full photo with its own white background (e.g. room renders): fill the tile instead of floating on gray */
 .product-img.is-photo { background: #fff; padding: 0; }
 .product-card .product-img.is-photo img, .line-card .product-img.is-photo img { width: 100%; height: 100%; max-height: none; object-fit: cover; }
@@ -266,6 +270,7 @@ br.pc { display: inline; }
   /* product category tabs: wrap to two rows instead of hiding tabs off-screen */
   .filter-tabs ul { flex-wrap: wrap; overflow: visible; gap: 0 24px; }
   .filter-tabs a { padding: 12px 0; }
+  .hl-gallery { gap: 12px; margin-bottom: 36px; }
   .grid-4.line-cards h3 { font-size: 17px; }
   .line-card h3::after { white-space: nowrap; }
   .product-top { padding: 40px 0 24px; }

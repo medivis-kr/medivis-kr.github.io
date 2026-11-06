@@ -118,7 +118,20 @@
        "Focused Highlights",
        "Restrained shapes and colors, color-grouped information, and emphasis only on highlighted controls."
       ]
-     ]
+     ],
+     "images": [
+      {
+       "src": "/uploads/product_board/elin-t5_thu-landscape.jpg",
+       "alt": "THU touchscreen handlebar GUI – landscape layout",
+       "ratio": 1.6
+      },
+      {
+       "src": "/uploads/product_board/elin-t5_thu-portrait.jpg",
+       "alt": "THU touchscreen handlebar GUI – portrait layout",
+       "ratio": 0.625
+      }
+     ],
+     "_images_source": "DK 장비 사진/New T5/NEW ELIN RENDERING/gui/20250113_New ELIN_가로.jpg, _세로.jpg"
     },
     {
      "title": "ELUI – Imaging Software",

@@ -111,7 +111,8 @@ function productDetail(p) {
         </div>`).join('')}`]);
   (p.highlights || []).forEach((h, i) => blocks.push([`hl-${i}`, h.title.split(' – ')[0], `
         <h2>${esc(h.title)}</h2>
-        ${h.lead ? `<p class="lead-dark intro">${esc(h.lead)}</p>` : ''}
+        ${h.lead ? `<p class="lead-dark intro">${esc(h.lead)}</p>` : ''}${h.images ? `
+        <div class="hl-gallery">${h.images.map(g => `<figure style="flex:${g.ratio}"><img src="${g.src}" alt="${esc(g.alt)}" loading="lazy"></figure>`).join('')}</div>` : ''}
         <div class="grid-${h.items.length > 3 ? 3 : h.items.length} feature-list">${h.items.map(([t, d], k) => `
           <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join('')}
         </div>`]));
