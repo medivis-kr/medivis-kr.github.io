@@ -7,10 +7,10 @@ const DOCS = path.join(ROOT, 'docs');
 const data = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/data/products.json'), 'utf8'));
 const VER = new Date().toISOString().slice(0, 16).replace(/\D/g, '');   // cache-busting for site.css/js
 // Floating contact buttons (bottom-right on every page). Empty URL = button hidden.
-// WhatsApp: CEO Hyunsub Chung's contact QR (11/6). LinkedIn: MEDIVIS company page (11/6).
+// WhatsApp: CEO Hyunsub Chung, +82 10-3635-6795 (number link works on PC/WhatsApp Web too; the QR link only opened in the app). LinkedIn: MEDIVIS company page (11/6).
 const SOCIAL = {
   linkedin: 'https://www.linkedin.com/company/medivis-inc-kr/',
-  whatsapp: 'https://wa.me/qr/YHCS7VIELZX6M1',
+  whatsapp: 'https://wa.me/821036356795',
 };
 const INQUIRY_TO = 'info@medivis.co.kr';   // FormSubmit target; swap for the alias FormSubmit mails after activation
 
