@@ -15,6 +15,19 @@
     btn.setAttribute('aria-expanded', open);
   });
 
+  // Language menu (click to open; closes on outside click / Escape).
+  var ls = document.querySelector('.lang-switch');
+  if (ls) {
+    var lb = ls.querySelector('.lang-btn');
+    lb.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var open = ls.classList.toggle('is-open');
+      lb.setAttribute('aria-expanded', open);
+    });
+    document.addEventListener('click', function () { ls.classList.remove('is-open'); lb.setAttribute('aria-expanded', false); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') { ls.classList.remove('is-open'); lb.setAttribute('aria-expanded', false); } });
+  }
+
   // Product list: tabs filter the grid instead of scrolling.
   var filters = [].slice.call(document.querySelectorAll('.filter-tabs a'));
   function applyFilter(key) {
@@ -55,7 +68,8 @@
 })();
 
 // Inquiry form → FormSubmit (no server of our own on GitHub Pages).
-function initInquiry(endpoint, fallbackEmail) {
+function initInquiry(endpoint, fallbackEmail, txt) {
+  txt = txt || {};
   var form = document.getElementById('inquiry');
   var msg = form.querySelector('.form-msg');
   var other = form.querySelector('.business-other');
@@ -78,14 +92,14 @@ function initInquiry(endpoint, fallbackEmail) {
     if (bad.length) {
       msg.className = 'form-msg err';
       msg.textContent = form.agree_check.checked || bad.some(function (el) { return el.name !== 'agree_check'; })
-        ? 'Please fill in all the required fields.' : 'Please check I agree to the Privacy Policy.';
+        ? (txt.required || 'Please fill in all the required fields.') : (txt.agree || 'Please check I agree to the Privacy Policy.');
       bad[0].focus();
       return;
     }
 
     var data = { _subject: '[MEDIVIS Website] New inquiry', _template: 'table', _captcha: 'false' };
     new FormData(form).forEach(function (v, k) { if (k !== 'business_text' || v) data[k] = v; });
-    submit.disabled = true; submit.textContent = 'Sending...';
+    submit.disabled = true; submit.textContent = txt.sending || 'Sending...';
     fetch(endpoint, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
@@ -93,10 +107,10 @@ function initInquiry(endpoint, fallbackEmail) {
     }).then(function (r) { return r.json(); }).then(function (r) {
       if (String(r.success) !== 'true') throw new Error(r.message || 'send failed');
       form.reset(); other.hidden = true;
-      msg.className = 'form-msg ok'; msg.textContent = 'Your inquiry has been sent. Thank you.';
+      msg.className = 'form-msg ok'; msg.textContent = txt.sent || 'Your inquiry has been sent. Thank you.';
     }).catch(function () {
       msg.className = 'form-msg err';
-      msg.textContent = 'Sorry, the inquiry could not be sent. Please email us at ' + fallbackEmail + '.';
-    }).then(function () { submit.disabled = false; submit.textContent = 'Submit Inquiry'; });
+      msg.textContent = (txt.failed || 'Sorry, the inquiry could not be sent. Please email us at') + ' ' + fallbackEmail + '.';
+    }).then(function () { submit.disabled = false; submit.textContent = txt.submit || 'Submit Inquiry'; });
   });
 }

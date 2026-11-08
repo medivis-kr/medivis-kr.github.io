@@ -17,6 +17,14 @@
 - 확인: `node tools/serve.js` → http://localhost:8090, 그다음 commit/push
 - `tools/mirror.js`·`postprocess.js`는 최초 이관 때만 쓴 도구라 다시 실행하지 않습니다.
 
+## 다국어 (2026-11-09~)
+- 언어: 영어(기본, 기존 주소 그대로), 포르투갈어 `/pt/`, 스페인어 `/es/`, 아랍어 `/ar/`(오른쪽→왼쪽), 카자흐어 `/kk/`, 몽골어 `/mn/`
+- 화면의 모든 문구는 `tools/build.js`의 `t('영어 문장')`을 거칩니다. 번역은 `src/i18n/<언어>.json` (영어 문장 → 번역).
+  빌드하면 `src/i18n/_source.json`에 영어 원문 목록이 다시 만들어지고, 번역이 빠진 문장은 영어로 나오며 빌드 메시지에 개수가 표시됩니다.
+- 제품명·모델명(INNOVISION, ELIN T5, SF-90 …)은 번역하지 않습니다. 개인정보처리방침·이용약관은 법률 검토 전까지 영어만 있습니다.
+- **원어민 검수**: `python tools/i18n_review.py export 검수표.xlsx` → 언어별 시트의 "Corrected" 칸에 수정 → `python tools/i18n_review.py import 검수표.xlsx` → `node tools/build.js` → commit/push
+- 문구를 새로 넣거나 바꾸면 영어만 바뀐 상태로 올라갑니다. 다른 언어는 번역을 추가해야 합니다(빌드 메시지 확인).
+
 ## 바뀐 점
 - **관리자 화면(/common/admin)이 없습니다.** 내용을 고치려면 `docs/` 안의 HTML을 직접 수정한 뒤 commit/push 합니다.
 - **문의하기 폼**은 FormSubmit(formsubmit.co, 무료)을 거쳐 `info@medivis.co.kr`로 메일이 갑니다.
