@@ -301,8 +301,110 @@
    "line": "xray",
    "category": "Digital",
    "name": "INNOVISION DXII (Floor Type)",
-   "image": "/uploads/product/1772001174568_aaa.png",
-   "detail": "/uploads/product_board/1772080943857_aaa.png"
+   "image": "/uploads/product/dxii-floor.png",
+   "_source": "Text transcribed from the previous detail-board image (uploads/product_board/1772080943857_aaa.png) so it can be translated; photos from DK 1) Digital System/1_INNOVISION DXII (Floor Type); mode photos cropped from the old board (no text in them)",
+   "tagline": "A next-generation digital radiography solution designed to optimize clinical workflow and performance.",
+   "highlights": [
+    {
+     "title": "Key Highlights",
+     "lead": "By reducing unnecessary steps and enabling fast, reliable image acquisition, it supports efficient examinations with consistent diagnostic quality. With seamless DICOM 3.0 networking and an intuitive operating environment, the system ensures smooth data transfer and supports real-time diagnosis in daily clinical practice.",
+     "items": [
+      [
+       "Imaging Performance",
+       [
+        "17\" × 17\" flat-panel detector",
+        "Ultra-high-definition imaging with low radiation dose",
+        "Advanced imaging applications for diverse clinical needs"
+       ]
+      ],
+      [
+       "Workflow Efficiency",
+       [
+        "High-speed image acquisition",
+        "Fast and easy exam preparation",
+        "Automatic positioning for flexible examinations"
+       ]
+      ],
+      [
+       "Design & Usability",
+       [
+        "Ergonomic design for intuitive, high-performance operation",
+        "Seamless DICOM 3.0 networking for efficient data transfer"
+       ]
+      ],
+      [
+       "Space Optimization",
+       [
+        "Space-efficient floor-type design for low-ceiling environments",
+        "Innovative rail-based structure maximizing space utilization"
+       ]
+      ],
+      [
+       "Optional Configuration",
+       [
+        "Synchronized tube and detector stand"
+       ]
+      ]
+     ]
+    }
+   ],
+   "galleries": [
+    {
+     "title": "Advanced Features",
+     "items": [
+      {
+       "title": "Chest Mode",
+       "image": "/uploads/product_board/dxii-floor_chest-mode.jpg"
+      },
+      {
+       "title": "Table Mode",
+       "image": "/uploads/product_board/dxii-floor_table-mode.jpg"
+      },
+      {
+       "title": "Stand Knee / Ankle Position",
+       "image": "/uploads/product_board/dxii-floor_knee-ankle.jpg"
+      },
+      {
+       "title": "Remote Control",
+       "image": "/uploads/product_board/dxii-floor_remote.jpg"
+      },
+      {
+       "title": "Rotation 45°",
+       "image": "/uploads/product_board/dxii-floor_rotation.jpg"
+      },
+      {
+       "title": "Rotation 45°",
+       "text": "Clinical images",
+       "image": "/uploads/product_board/dxii-floor_rotation-xray.jpg"
+      }
+     ]
+    },
+    {
+     "title": "System Components",
+     "items": [
+      {
+       "title": "Tube Stand",
+       "text": "SF-90",
+       "image": "/uploads/product_board/dxii-floor_sf-90.jpg"
+      },
+      {
+       "title": "Detector Stand",
+       "text": "DS-90",
+       "image": "/uploads/product_board/dxii-floor_ds-90.png"
+      },
+      {
+       "title": "Vertical Bucky Stand",
+       "text": "VB-90",
+       "image": "/uploads/product_board/dxii-floor_vb-90.png"
+      },
+      {
+       "title": "Patient Table",
+       "text": "TF-90",
+       "image": "/uploads/product_board/dxii-floor_tf-90.png"
+      }
+     ]
+    }
+   ]
   },
   {
    "id": 99,

@@ -129,7 +129,15 @@ function productDetail(p) {
         ${h.lead ? `<p class="lead-dark intro">${esc(h.lead)}</p>` : ''}${h.images ? `
         <div class="hl-gallery">${h.images.map(g => `<figure style="flex:${g.ratio}"><a href="${g.src}" target="_blank" rel="noopener" title="View full size"><img src="${g.src}" alt="${esc(g.alt)}" loading="lazy"></a></figure>`).join('')}</div>` : ''}
         <div class="grid-${h.items.length > 3 ? 3 : h.items.length} feature-list">${h.items.map(([t, d], k) => `
-          <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3><p>${esc(d)}</p></div>`).join('')}
+          <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${esc(t)}</h3>${Array.isArray(d)
+            ? `<ul class="bullets">${d.map(x => `<li>${esc(x)}</li>`).join('')}</ul>` : `<p>${esc(d)}</p>`}</div>`).join('')}
+        </div>`]));
+  // Captioned photo grids (e.g. operating modes, system components): all text stays HTML for translation.
+  (p.galleries || []).forEach((g, i) => blocks.push([`gal-${i}`, g.title, `
+        <h2>${esc(g.title)}</h2>
+        <div class="grid-3 photo-grid">${g.items.map(it => `
+          <figure class="photo-card"><div class="photo"><img src="${it.image}" alt="${esc(it.title)}" loading="lazy"></div>
+            <figcaption>${esc(it.title)}${it.text ? `<span>${esc(it.text)}</span>` : ''}</figcaption></figure>`).join('')}
         </div>`]));
   if (p.specs) blocks.push(['specs', 'Key Specifications', `
         <h2>Key Specifications</h2>
