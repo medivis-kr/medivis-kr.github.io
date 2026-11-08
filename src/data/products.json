@@ -354,7 +354,7 @@
      "items": [
       {
        "title": "Remote Control",
-       "image": "/uploads/product_board/dxii-floor_remote.jpg"
+       "image": "/uploads/product_board/dxii-floor_remote-srgb.jpg"
       },
       {
        "title": "Rotation 45°",
@@ -393,7 +393,7 @@
       {
        "title": "Patient Table (Option)",
        "text": "TE-90 · 6-Way",
-       "image": "/uploads/product_board/dxii-floor_te-90.jpg"
+       "image": "/uploads/product_board/dxii-floor_te-90-srgb.jpg"
       }
      ],
      "_note": "DS-90/VB-90 re-cut 11/9 (VB-90 source was mirrored; flipped so the DK logo reads correctly). TE-90 photo = DK 'Elin-T4_accuray.jpg'; 4-Way/6-Way per the user 11/9."
@@ -464,7 +464,7 @@
      "label": "Mobile DR Cart",
      "title": "Lightweight Mobile DR Unit",
      "text": "For ICU, operating rooms, and ward bedside examinations.",
-     "image": "/uploads/product_board/elmo-t3s_bedside.jpg"
+     "image": "/uploads/product_board/elmo-t3s_bedside-srgb.jpg"
     }
    ],
    "highlights": [
