@@ -145,7 +145,15 @@
        "Tools / Image / Status Bar",
        "Clearly separated Tools, Image and Status bar areas for a maximized image view."
       ]
-     ]
+     ],
+     "images": [
+      {
+       "src": "/uploads/product_board/elin-t5_elui.jpg",
+       "alt": "ELUI imaging software screen – Tools, Image and Status bar areas",
+       "ratio": 1.78
+      }
+     ],
+     "_images_source": "DK 'Design strategy-gui.pdf' p.28 (ELUI B) monitor screen, chosen by the user 11/9"
     }
    ],
    "imageFit": "photo",
