@@ -377,11 +377,6 @@
       },
       {
        "title": "Detector Stand",
-       "text": "DS-90",
-       "image": "/uploads/product_board/dxii-floor_ds-90-cut.png"
-      },
-      {
-       "title": "Detector Stand",
        "text": "VB-90",
        "image": "/uploads/product_board/dxii-floor_vb-90-cut3.png"
       },
@@ -389,6 +384,11 @@
        "title": "Patient Table",
        "text": "TF-90 · 4-Way",
        "image": "/uploads/product_board/dxii-floor_tf-90.png"
+      },
+      {
+       "title": "Detector Stand (Option)",
+       "text": "DS-90",
+       "image": "/uploads/product_board/dxii-floor_ds-90-cut.png"
       },
       {
        "title": "Patient Table (Option)",
