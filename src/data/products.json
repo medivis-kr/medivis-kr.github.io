@@ -121,12 +121,12 @@
      ],
      "images": [
       {
-       "src": "/uploads/product_board/elin-t5_thu-landscape.jpg",
+       "src": "/uploads/product_board/elin-t5_thu-landscape-hq.jpg",
        "alt": "THU touchscreen handlebar GUI – landscape layout",
        "ratio": 1.6
       },
       {
-       "src": "/uploads/product_board/elin-t5_thu-portrait.jpg",
+       "src": "/uploads/product_board/elin-t5_thu-portrait-hq.jpg",
        "alt": "THU touchscreen handlebar GUI – portrait layout",
        "ratio": 0.625
       }
@@ -148,7 +148,7 @@
      ],
      "images": [
       {
-       "src": "/uploads/product_board/elin-t5_elui.jpg",
+       "src": "/uploads/product_board/elin-t5_elui-hq.jpg",
        "alt": "ELUI imaging software screen – Tools, Image and Status bar areas",
        "ratio": 1.78
       }
