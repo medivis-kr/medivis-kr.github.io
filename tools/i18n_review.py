@@ -1,7 +1,8 @@
 """Translation review spreadsheet for native speakers.
 
   python tools/i18n_review.py export <file.xlsx>   one sheet per language: English | current translation | Corrected | Comment
-  python tools/i18n_review.py import <file.xlsx>   copies every filled "Corrected" cell into src/i18n/<lang>.json
+  python tools/i18n_review.py split <folder>       one file per language (to send to each country's reviewer)
+  python tools/i18n_review.py import <file.xlsx> [more.xlsx ...]   copies every filled "Corrected" cell into src/i18n/<lang>.json
 
 After import run `node tools/build.js`, check, then commit/push.
 Rows are matched by the English text, so the order of the sheet does not matter.
@@ -15,7 +16,8 @@ I18N = ROOT / 'src' / 'i18n'
 LANGS = {'pt': 'Português', 'es': 'Español', 'ar': 'العربية (Saudi Arabia)', 'kk': 'Қазақша (Kazakhstan)', 'mn': 'Монгол (Mongolia)'}
 
 
-def export(out):
+def export(out, langs=None):
+    langs = {c: LANGS[c] for c in (langs or LANGS)}
     src = json.loads((I18N / '_source.json').read_text(encoding='utf-8'))
     wb = Workbook()
     guide = wb.active
@@ -34,7 +36,7 @@ def export(out):
     guide['A1'].font = Font(bold=True, size=14)
     guide.column_dimensions['A'].width = 110
     head = PatternFill('solid', fgColor='22317D')
-    for code, name in LANGS.items():
+    for code, name in langs.items():
         d = json.loads((I18N / f'{code}.json').read_text(encoding='utf-8'))
         ws = wb.create_sheet(code)
         ws.append(['#', 'English (source)', f'Current translation – {name}', 'Corrected', 'Comment'])
@@ -70,6 +72,18 @@ def import_(path):
         print(f'{code}: {n} corrections applied')
 
 
+def split(folder, date):
+    folder = pathlib.Path(folder)
+    for code, name in LANGS.items():
+        export(folder / f'MEDIVIS website translation review_{code.upper()} {name.split(" (")[0]}_{date}.xlsx', [code])
+
+
 if __name__ == '__main__':
-    cmd, path = sys.argv[1], sys.argv[2]
-    export(path) if cmd == 'export' else import_(path)
+    cmd = sys.argv[1]
+    if cmd == 'export':
+        export(sys.argv[2])
+    elif cmd == 'split':
+        split(sys.argv[2], sys.argv[3] if len(sys.argv) > 3 else '2026-11-09')
+    else:
+        for p in sys.argv[2:]:
+            import_(p)

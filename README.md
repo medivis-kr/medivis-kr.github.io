@@ -22,7 +22,7 @@
 - 화면의 모든 문구는 `tools/build.js`의 `t('영어 문장')`을 거칩니다. 번역은 `src/i18n/<언어>.json` (영어 문장 → 번역).
   빌드하면 `src/i18n/_source.json`에 영어 원문 목록이 다시 만들어지고, 번역이 빠진 문장은 영어로 나오며 빌드 메시지에 개수가 표시됩니다.
 - 제품명·모델명(INNOVISION, ELIN T5, SF-90 …)은 번역하지 않습니다. 개인정보처리방침·이용약관은 법률 검토 전까지 영어만 있습니다.
-- **원어민 검수**: `python tools/i18n_review.py export 검수표.xlsx` → 언어별 시트의 "Corrected" 칸에 수정 → `python tools/i18n_review.py import 검수표.xlsx` → `node tools/build.js` → commit/push
+- **원어민 검수**: `python tools/i18n_review.py split 폴더` → 언어별 파일 5개 → 각 나라 검수자가 "Corrected" 칸에 수정 → `python tools/i18n_review.py import 파일1.xlsx 파일2.xlsx …` → `node tools/build.js` → commit/push
 - 문구를 새로 넣거나 바꾸면 영어만 바뀐 상태로 올라갑니다. 다른 언어는 번역을 추가해야 합니다(빌드 메시지 확인).
 
 ## 바뀐 점
