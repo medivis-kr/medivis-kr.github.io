@@ -462,7 +462,7 @@
    "category": "Mobile",
    "name": "ELMO-T3S",
    "image": "/uploads/product/elmo-t3s.png",
-   "_source": "MEDIVIS Product Showcase 1.5, slide 15 (Elmo-T3S); images = slide 15 cutout and DK 3) Mobile System/9_ELMO-T3P",
+   "_source": "Showcase 1.5 slide 15 (tagline); DK 'Elmo-T3S Brochure.pdf' and 'ELMO- T3S_Product Data.pdf' (11/9) for features and specifications. Showcase's '5.1 kW' and 'standard AC wall outlet' are the Elmo-T3P values in the brochure's T3P/T3S table; corrected to T3S (5 kW, battery). Photos: DK 3) Mobile System/9_ELMO-T3P (ELMO-T3s_내지1 crops, CMYK->sRGB).",
    "tagline": "Lightweight mobile DR unit for ICU, operating rooms, and ward bedside examinations.",
    "features": [
     {
@@ -470,19 +470,40 @@
      "title": "Lightweight Mobile DR Unit",
      "text": "For ICU, operating rooms, and ward bedside examinations.",
      "image": "/uploads/product_board/elmo-t3s_bedside-srgb.jpg"
+    },
+    {
+     "title": "Light and Compact Design",
+     "text": "Mobile X-ray system ELMO-T3S has a compact design that enables you to take X-ray imaging even in a small space. This mobile X-ray is useful for patients who are not comfortable to move.",
+     "image": "/uploads/product_board/elmo-t3s_maneuver.jpg"
+    },
+    {
+     "title": "Smooth Maneuvering",
+     "text": "Compact and lightweight design to achieve easy maneuverability and good visibility.",
+     "image": "/uploads/product_board/elmo-t3s_motion-side.jpg"
+    },
+    {
+     "title": "Spring Balanced Arm",
+     "text": "+/- 90° arm rotation and +/- 180° tube rotation, with a focus height of 455 – 1,855 mm.",
+     "image": "/uploads/product_board/elmo-t3s_motion-front.jpg"
+    },
+    {
+     "label": "Option",
+     "title": "DR Upgrade",
+     "image": "/uploads/product_board/elmo-t3s_dr-upgrade.jpg"
     }
    ],
    "highlights": [
     {
      "title": "Key Features",
+     "first": true,
      "items": [
       [
-       "5.1 kW High-Frequency Inverter Generator",
-       ""
+       "5 kW High-Frequency Inverter Generator",
+       "Stable output by the high frequency inverter generator system, maximum current 100 mA."
       ],
       [
-       "Standard AC Wall Outlet",
-       "Standard AC wall outlet powered operation"
+       "Battery Module",
+       "Battery module 12 VDC (24 A) × 4. Exposure is available during charging."
       ],
       [
        "One-Touch Braking",
@@ -490,6 +511,121 @@
       ]
      ]
     }
+   ],
+   "galleries": [
+    {
+     "title": "High Quality Image with Simple Operation",
+     "cols": 4,
+     "lead": "The touch keypad, digital display of kV and mAs value on the operating console enable exposure parameters to set easily and quickly. The anatomical programs (APR) features with symbolic buttons, contribute to intuitive operation with a minimum number of key stroke.",
+     "items": [
+      {
+       "title": "The touch keypad",
+       "image": "/uploads/product_board/elmo-t3s_keypad.jpg"
+      },
+      {
+       "title": "Digital display of kV",
+       "image": "/uploads/product_board/elmo-t3s_display.jpg"
+      },
+      {
+       "title": "Operating console",
+       "image": "/uploads/product_board/elmo-t3s_console.jpg"
+      },
+      {
+       "title": "Moving outlet",
+       "image": "/uploads/product_board/elmo-t3s_outlet.jpg"
+      }
+     ]
+    }
+   ],
+   "specs": [
+    [
+     "Tube Voltage Range",
+     "40 ~ 110 kV"
+    ],
+    [
+     "mAs Range",
+     "0.1 ~ 100 mAs (38 steps)"
+    ],
+    [
+     "Short Time Rating",
+     "100 mA at 50 kV"
+    ],
+    [
+     "Max X-ray Output",
+     "5 kW"
+    ],
+    [
+     "Inverter Frequency",
+     "60 kHz"
+    ],
+    [
+     "Input Power",
+     "Single Phase 220 VAC, 50/60 Hz"
+    ],
+    [
+     "X-ray Tube Focal Spot",
+     "0.6 / 1.8 mm"
+    ],
+    [
+     "Anode Heat Capacity",
+     "30 kJ"
+    ],
+    [
+     "Target Angle",
+     "15°"
+    ],
+    [
+     "Collimator",
+     "Manual, Max field 47 × 47 cm @ SID 100 cm"
+    ],
+    [
+     "Vertical Movement",
+     "1,400 mm"
+    ],
+    [
+     "Arm Rotation",
+     "+/- 90°"
+    ],
+    [
+     "Tube Rotation",
+     "+/- 180°"
+    ],
+    [
+     "APR",
+     "330 Programs"
+    ],
+    [
+     "Controller",
+     "Dual (Tube Head & Main Body)"
+    ],
+    [
+     "Remote Controller",
+     "IR Sensor Type"
+    ],
+    [
+     "DR Communication",
+     "Available"
+    ],
+    [
+     "Battery",
+     "12 VDC (24 A) × 4"
+    ],
+    [
+     "Full Charging Time",
+     "14 ~ 16 hours"
+    ],
+    [
+     "Exposures after Full Charge",
+     "60 (90 kV, 21 mAs)"
+    ],
+    [
+     "Exposure during Charging",
+     "Yes"
+    ],
+    [
+     "Total Weight",
+     "145 kg"
+    ]
    ]
   },
   {
