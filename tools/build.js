@@ -195,7 +195,8 @@ function productDetail(p) {
   // Captioned photo grids (e.g. operating modes, system components): all text stays HTML for translation.
   (p.galleries || []).forEach((g, i) => blocks.push([`gal-${i}`, g.title, `
         <h2>${te(g.title)}</h2>
-        <div class="grid-3 photo-grid">${g.items.map(it => `
+        ${g.lead ? `<p class="lead-dark intro">${te(g.lead)}</p>` : ''}
+        <div class="grid-${g.cols || 3} photo-grid">${g.items.map(it => `
           <figure class="photo-card"><div class="photo"><img src="${it.image}" alt="${te(it.title)}" loading="lazy"></div>
             <figcaption>${te(it.title)}${it.text ? `<span>${te(it.text)}</span>` : ''}</figcaption></figure>`).join('')}
         </div>`]));

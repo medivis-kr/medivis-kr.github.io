@@ -534,8 +534,114 @@
    "category": "Mobile",
    "name": "INNOVISION P5",
    "image": "/uploads/product/innovision-p5.png",
-   "detail": "/uploads/product_board/1772605560886_INNOVISION_P5.png",
-   "_image_source": "DK 3) Mobile System/INNOVISION P5/Image/INNOVISION-P5/Innovision P5.png"
+   "_image_source": "DK 3) Mobile System/INNOVISION P5/Image/INNOVISION-P5/Innovision P5.png",
+   "_source": "Text transcribed from the previous detail-board image (uploads/product_board/1772605560886_INNOVISION_P5.png) so it can be translated. Photos from DK 3) Mobile System/INNOVISION P5/Image; workstation laptop and AI console screen cropped from the old board (not in the folder). 'Highlights in Detail' photos from the same DK folder (exposure switch from 아비즈 브로셔 삽입 이미지 (9)); Hi&abyz-branded brochure images left out.",
+   "tagline": "A handheld, ultra-portable X-ray system designed for maximum mobility and flexibility.",
+   "target": "Portable Type",
+   "highlights": [
+    {
+     "title": "Key Highlights",
+     "first": true,
+     "lead": "Its lightweight and compact form allows imaging to be performed directly at the patient’s location, making it ideal for bedside examinations in hospitals, especially for patients with limited mobility. Beyond traditional medical facilities, INNOVISION P5 is also well suited for use in rural or remote areas, as well as sports and field environments, where access to conventional imaging systems is limited. Wherever imaging is needed, INNOVISION P5 delivers reliable performance with unmatched portability.",
+     "items": [
+      [
+       "Low dose X-ray",
+       ""
+      ],
+      [
+       "Wired exposure switch",
+       ""
+      ],
+      [
+       "Distance sensor (Laser guide beam)",
+       ""
+      ],
+      [
+       "High resolution LCD control panel",
+       ""
+      ],
+      [
+       "Detachable battery",
+       ""
+      ]
+     ]
+    }
+   ],
+   "galleries": [
+    {
+     "title": "Highlights in Detail",
+     "cols": 4,
+     "items": [
+      {
+       "title": "Wired exposure switch",
+       "image": "/uploads/product_board/p5_exposure-switch.png"
+      },
+      {
+       "title": "Distance sensor (Laser guide beam)",
+       "image": "/uploads/product_board/p5_collimator.jpg"
+      },
+      {
+       "title": "High resolution LCD control panel",
+       "image": "/uploads/product_board/p5_lcd.png"
+      },
+      {
+       "title": "Detachable battery",
+       "image": "/uploads/product_board/p5_battery.png"
+      }
+     ]
+    },
+    {
+     "title": "A simple, optimized configuration for portability",
+     "cols": 4,
+     "lead": "Wi-Fi between the detector and the workstation, Bluetooth between the workstation and INNOVISION P5.",
+     "items": [
+      {
+       "title": "Wireless Detector",
+       "text": "Wi-Fi",
+       "image": "/uploads/product_board/p5_detector.png"
+      },
+      {
+       "title": "Workstation (PC)",
+       "image": "/uploads/product_board/p5_workstation.jpg"
+      },
+      {
+       "title": "AI Powered Console software",
+       "image": "/uploads/product_board/p5_console.jpg"
+      },
+      {
+       "title": "INNOVISION P5",
+       "text": "Bluetooth",
+       "image": "/uploads/product_board/p5_unit.png"
+      }
+     ]
+    }
+   ],
+   "specs": [
+    [
+     "Tube kV",
+     "50 ~ 90 kV"
+    ],
+    [
+     "mA",
+     "8, 10 mA"
+    ],
+    [
+     "mAs",
+     "0.4 ~ 20 mAs"
+    ],
+    [
+     "Output Power",
+     "720 W"
+    ],
+    [
+     "Collimator",
+     "Manual, Double Slit Lamp"
+    ],
+    [
+     "Weight",
+     "3.5 kg"
+    ]
+   ]
   },
   {
    "id": 91,
