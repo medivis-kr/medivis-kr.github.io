@@ -462,7 +462,7 @@
    "category": "Mobile",
    "name": "ELMO-T3S",
    "image": "/uploads/product/elmo-t3s.png",
-   "_source": "Showcase 1.5 slide 15 (tagline); DK 'Elmo-T3S Brochure.pdf' and 'ELMO- T3S_Product Data.pdf' (11/9) for features and specifications. Showcase's '5.1 kW' and 'standard AC wall outlet' are the Elmo-T3P values in the brochure's T3P/T3S table; corrected to T3S (5 kW, battery). Photos: DK 3) Mobile System/9_ELMO-T3P (ELMO-T3s_내지1 crops, CMYK->sRGB).",
+   "_source": "Showcase 1.5 slide 15 (tagline); DK 'Elmo-T3S Brochure.pdf' and 'ELMO- T3S_Product Data.pdf' (11/9) for features and specifications. Showcase's '5.1 kW' and 'standard AC wall outlet' are the Elmo-T3P values in the brochure's T3P/T3S table; corrected to T3S (5 kW, battery). Photos: DK 3) Mobile System/9_ELMO-T3P (ELMO-T3s_내지1 crops, CMYK->sRGB). Key Specifications table removed 11/9 at the user's request (too detailed).",
    "tagline": "Lightweight mobile DR unit for ICU, operating rooms, and ward bedside examinations.",
    "features": [
     {
@@ -536,96 +536,6 @@
       }
      ]
     }
-   ],
-   "specs": [
-    [
-     "Tube Voltage Range",
-     "40 ~ 110 kV"
-    ],
-    [
-     "mAs Range",
-     "0.1 ~ 100 mAs (38 steps)"
-    ],
-    [
-     "Short Time Rating",
-     "100 mA at 50 kV"
-    ],
-    [
-     "Max X-ray Output",
-     "5 kW"
-    ],
-    [
-     "Inverter Frequency",
-     "60 kHz"
-    ],
-    [
-     "Input Power",
-     "Single Phase 220 VAC, 50/60 Hz"
-    ],
-    [
-     "X-ray Tube Focal Spot",
-     "0.6 / 1.8 mm"
-    ],
-    [
-     "Anode Heat Capacity",
-     "30 kJ"
-    ],
-    [
-     "Target Angle",
-     "15°"
-    ],
-    [
-     "Collimator",
-     "Manual, Max field 47 × 47 cm @ SID 100 cm"
-    ],
-    [
-     "Vertical Movement",
-     "1,400 mm"
-    ],
-    [
-     "Arm Rotation",
-     "+/- 90°"
-    ],
-    [
-     "Tube Rotation",
-     "+/- 180°"
-    ],
-    [
-     "APR",
-     "330 Programs"
-    ],
-    [
-     "Controller",
-     "Dual (Tube Head & Main Body)"
-    ],
-    [
-     "Remote Controller",
-     "IR Sensor Type"
-    ],
-    [
-     "DR Communication",
-     "Available"
-    ],
-    [
-     "Battery",
-     "12 VDC (24 A) × 4"
-    ],
-    [
-     "Full Charging Time",
-     "14 ~ 16 hours"
-    ],
-    [
-     "Exposures after Full Charge",
-     "60 (90 kV, 21 mAs)"
-    ],
-    [
-     "Exposure during Charging",
-     "Yes"
-    ],
-    [
-     "Total Weight",
-     "145 kg"
-    ]
    ]
   },
   {
