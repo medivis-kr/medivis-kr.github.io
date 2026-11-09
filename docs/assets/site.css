@@ -129,6 +129,7 @@ br.pc { display: inline; }
 .product-card, .line-card { display: block; }
 .product-card:hover .product-img img, .line-card:hover .product-img img { transform: scale(1.04); }
 .product-card h3 { font-size: 20px; margin-top: 20px; text-align: center; }
+.product-card h3 .badge { display: table; margin: 10px auto 0; }  /* badge sits centered under the name */
 .name-sub { display: block; font-size: .62em; font-weight: 500; color: var(--text); margin-top: .35em; letter-spacing: 0; }
 .product-card .name-sub { font-size: 15px; }
 .product-card p { font-size: 14px; color: var(--text); text-align: center; margin-top: 4px; }

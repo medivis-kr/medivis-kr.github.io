@@ -166,7 +166,7 @@ const nameText = p => { const m = p.name.match(/^(.*?)\s*\((.+)\)$/); return m ?
 const productCard = p => `
           <a class="product-card" href="${productUrl(p)}">
             <div class="product-img${p.imageFit === 'photo' ? ' is-photo' : ''}"${p.imageBg ? ` style="background:${p.imageBg}"` : ''}><img src="${p.image}" alt="${esc(p.name)}" loading="lazy"></div>
-            <h3>${p.badge ? `<span class="badge">${te(p.badge)}</span>` : ''}${nameHtml(p)}</h3>
+            <h3>${nameHtml(p)}${p.badge ? `<span class="badge">${te(p.badge)}</span>` : ''}</h3>
           </a>`;
 
 // Structured detail (specs table, feature rows, highlight cards) for products without a detail board image.
