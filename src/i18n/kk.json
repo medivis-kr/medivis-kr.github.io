@@ -308,5 +308,12 @@
  "Workstation (PC)": "Жұмыс станциясы (ДК)",
  "mA": "mA",
  "mAs": "mAs",
- "Highlights in Detail": "Ерекшеліктер толығырақ"
+ "Highlights in Detail": "Ерекшеліктер толығырақ",
+ "Clinical Images": "Клиникалық кескіндер",
+ "Chest PA": "Кеуде (PA)",
+ "Chest Lateral": "Кеуде (бүйірлік)",
+ "Abdomen": "Іш қуысы",
+ "Hand": "Қол басы",
+ "Knee AP": "Тізе (AP)",
+ "Foot AP": "Табан (AP)"
 }

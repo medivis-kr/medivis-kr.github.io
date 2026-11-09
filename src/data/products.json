@@ -614,6 +614,43 @@
        "image": "/uploads/product_board/p5_unit.png"
       }
      ]
+    },
+    {
+     "title": "Clinical Images",
+     "dark": true,
+     "items": [
+      {
+       "title": "Chest PA",
+       "image": "/uploads/product_board/p5_clinical_chest-pa_sm.jpg",
+       "full": "/uploads/product_board/p5_clinical_chest-pa.jpg"
+      },
+      {
+       "title": "Chest Lateral",
+       "image": "/uploads/product_board/p5_clinical_chest-lat_sm.jpg",
+       "full": "/uploads/product_board/p5_clinical_chest-lat.jpg"
+      },
+      {
+       "title": "Abdomen",
+       "image": "/uploads/product_board/p5_clinical_abdomen_sm.jpg",
+       "full": "/uploads/product_board/p5_clinical_abdomen.jpg"
+      },
+      {
+       "title": "Hand",
+       "image": "/uploads/product_board/p5_clinical_hand_sm.jpg",
+       "full": "/uploads/product_board/p5_clinical_hand.jpg"
+      },
+      {
+       "title": "Knee AP",
+       "image": "/uploads/product_board/p5_clinical_knee-ap_sm.jpg",
+       "full": "/uploads/product_board/p5_clinical_knee-ap.jpg"
+      },
+      {
+       "title": "Foot AP",
+       "image": "/uploads/product_board/p5_clinical_foot-ap_sm.jpg",
+       "full": "/uploads/product_board/p5_clinical_foot-ap.jpg"
+      }
+     ],
+     "_source": "DK INNOVISION P5/Image/INNOVISION-P5/Clinical images (250613); checked 11/9: no burned-in patient data"
     }
    ],
    "specs": [

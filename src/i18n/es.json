@@ -308,5 +308,12 @@
  "Workstation (PC)": "Estación de trabajo (PC)",
  "mA": "mA",
  "mAs": "mAs",
- "Highlights in Detail": "Aspectos destacados en detalle"
+ "Highlights in Detail": "Aspectos destacados en detalle",
+ "Clinical Images": "Imágenes clínicas",
+ "Chest PA": "Tórax PA",
+ "Chest Lateral": "Tórax lateral",
+ "Abdomen": "Abdomen",
+ "Hand": "Mano",
+ "Knee AP": "Rodilla AP",
+ "Foot AP": "Pie AP"
 }

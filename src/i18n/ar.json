@@ -308,5 +308,12 @@
  "Workstation (PC)": "محطة العمل (PC)",
  "mA": "mA",
  "mAs": "mAs",
- "Highlights in Detail": "المزايا بالتفصيل"
+ "Highlights in Detail": "المزايا بالتفصيل",
+ "Clinical Images": "صور سريرية",
+ "Chest PA": "الصدر (PA)",
+ "Chest Lateral": "الصدر (جانبي)",
+ "Abdomen": "البطن",
+ "Hand": "اليد",
+ "Knee AP": "الركبة (AP)",
+ "Foot AP": "القدم (AP)"
 }

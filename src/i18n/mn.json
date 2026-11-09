@@ -308,5 +308,12 @@
  "Workstation (PC)": "Ажлын станц (PC)",
  "mA": "mA",
  "mAs": "mAs",
- "Highlights in Detail": "Онцлох шинж чанарууд дэлгэрэнгүй"
+ "Highlights in Detail": "Онцлох шинж чанарууд дэлгэрэнгүй",
+ "Clinical Images": "Эмнэлзүйн зураг",
+ "Chest PA": "Цээж (PA)",
+ "Chest Lateral": "Цээж (хажуугийн)",
+ "Abdomen": "Хэвлий",
+ "Hand": "Гар",
+ "Knee AP": "Өвдөг (AP)",
+ "Foot AP": "Хөлийн тавхай (AP)"
 }

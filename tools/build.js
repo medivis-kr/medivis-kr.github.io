@@ -196,8 +196,8 @@ function productDetail(p) {
   (p.galleries || []).forEach((g, i) => blocks.push([`gal-${i}`, g.title, `
         <h2>${te(g.title)}</h2>
         ${g.lead ? `<p class="lead-dark intro">${te(g.lead)}</p>` : ''}
-        <div class="grid-${g.cols || 3} photo-grid">${g.items.map(it => `
-          <figure class="photo-card"><div class="photo"><img src="${it.image}" alt="${te(it.title)}" loading="lazy"></div>
+        <div class="grid-${g.cols || 3} photo-grid${g.dark ? ' is-dark' : ''}">${g.items.map(it => `
+          <figure class="photo-card"><div class="photo">${it.full ? `<a href="${it.full}" target="_blank" rel="noopener" title="${te('View full size')}">` : ''}<img src="${it.image}" alt="${te(it.title)}" loading="lazy">${it.full ? '</a>' : ''}</div>
             <figcaption>${te(it.title)}${it.text ? `<span>${te(it.text)}</span>` : ''}</figcaption></figure>`).join('')}
         </div>`]));
   if (p.specs) blocks.push(['specs', 'Key Specifications', `
