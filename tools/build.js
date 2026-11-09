@@ -173,21 +173,25 @@ const productCard = p => `
 function productDetail(p) {
   // Order: Features, highlight blocks, then Key Specifications last; backgrounds alternate gray/white.
   const blocks = [];
+  const hl = (p.highlights || []).map((h, i) => [h, i]);
+  const hlBlock = ([h, i]) => [`hl-${i}`, h.title.split(' – ')[0], `
+        <h2>${te(h.title)}</h2>
+        ${h.lead ? `<p class="lead-dark intro">${te(h.lead)}</p>` : ''}${h.images ? `
+        <div class="hl-gallery">${h.images.map(g => `<figure style="flex:${g.ratio}"><a href="${g.src}" target="_blank" rel="noopener" title="${te('View full size')}"><img src="${g.src}" alt="${te(g.alt)}" loading="lazy"></a></figure>`).join('')}</div>` : ''}
+        <div class="grid-${h.items.length > 3 ? (h.items.length === 4 ? 2 : 3) : h.items.length} feature-list">${h.items.map(([s, d], k) => `
+          <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${te(s)}</h3>${Array.isArray(d)
+            ? `<ul class="bullets">${d.map(x => `<li>${te(x)}</li>`).join('')}</ul>` : (d ? `<p>${te(d)}</p>` : '')}</div>`).join('')}
+        </div>`];
+  // highlight blocks marked "first" (e.g. a product's Key Highlights) come before Features
+  hl.filter(([h]) => h.first).forEach(x => blocks.push(hlBlock(x)));
   if (p.features) blocks.push(['features', 'Features', `
         <h2>${te('Features')}</h2>
         ${p.intro ? `<p class="lead-dark intro">${te(p.intro)}</p>` : ''}${p.features.map((f, i) => `
         <div class="feature-row${i % 2 ? ' is-reverse' : ''}">
           <div class="feature-media"><img src="${f.image}" alt="${te(f.title)}" loading="lazy"></div>
-          <div class="feature-copy">${f.label ? `<p class="eyebrow">${te(f.label)}</p>` : ''}<h3>${te(f.title)}</h3>${f.text ? `<p>${te(f.text)}</p>` : ''}</div>
+          <div class="feature-copy">${f.label ? `<p class="eyebrow">${te(f.label)}</p>` : ''}<h3>${te(f.title)}</h3>${[].concat(f.text || []).map(x => `<p>${te(x)}</p>`).join('')}</div>
         </div>`).join('')}`]);
-  (p.highlights || []).forEach((h, i) => blocks.push([`hl-${i}`, h.title.split(' – ')[0], `
-        <h2>${te(h.title)}</h2>
-        ${h.lead ? `<p class="lead-dark intro">${te(h.lead)}</p>` : ''}${h.images ? `
-        <div class="hl-gallery">${h.images.map(g => `<figure style="flex:${g.ratio}"><a href="${g.src}" target="_blank" rel="noopener" title="${te('View full size')}"><img src="${g.src}" alt="${te(g.alt)}" loading="lazy"></a></figure>`).join('')}</div>` : ''}
-        <div class="grid-${h.items.length > 3 ? 3 : h.items.length} feature-list">${h.items.map(([s, d], k) => `
-          <div class="feature"><span class="num">${String(k + 1).padStart(2, '0')}</span><h3>${te(s)}</h3>${Array.isArray(d)
-            ? `<ul class="bullets">${d.map(x => `<li>${te(x)}</li>`).join('')}</ul>` : (d ? `<p>${te(d)}</p>` : '')}</div>`).join('')}
-        </div>`]));
+  hl.filter(([h]) => !h.first).forEach(x => blocks.push(hlBlock(x)));
   // Captioned photo grids (e.g. operating modes, system components): all text stays HTML for translation.
   (p.galleries || []).forEach((g, i) => blocks.push([`gal-${i}`, g.title, `
         <h2>${te(g.title)}</h2>

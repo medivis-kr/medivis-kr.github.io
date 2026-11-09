@@ -543,8 +543,105 @@
    "category": "Mammography",
    "name": "ELMA-T3",
    "image": "/uploads/product/elma-t3.png",
-   "detail": "/uploads/product_board/1772605444662_ELMA-T3.png",
-   "_image_source": "DK 4) Mammography System/13_ELMA-T3/ELMA-T3.jpg, white background removed"
+   "_image_source": "DK 4) Mammography System/13_ELMA-T3/ELMA-T3.jpg, white background removed",
+   "_source": "Text transcribed from the previous detail-board image (uploads/product_board/1772605444662_ELMA-T3.png) so it can be translated; source typos fixed ('ELMA-T5' -> ELMA-T3, stray '\\MICOM'). Photos from DK 4) Mammography System/13_ELMA-T3; 'Dual Control Buttons' photo cropped from the old board (not in the folder).",
+   "tagline": "Breast Care for Women. Cost Effective Solution for Mammography.",
+   "highlights": [
+    {
+     "title": "Key Highlights",
+     "first": true,
+     "items": [
+      [
+       "High Frequency Inverter System",
+       ""
+      ],
+      [
+       "Compact Design with a built-in Generator",
+       ""
+      ],
+      [
+       "Full Color Monitor and Dual Control Button",
+       ""
+      ],
+      [
+       "Dose control by AEC",
+       ""
+      ]
+     ]
+    },
+    {
+     "title": "Increased Efficiency and High Patient Throughput",
+     "items": [
+      [
+       "Intelligent Automatic Exposure Control (AEC)",
+       "Automatic Exposure Control system ensures consistent image quality with reliable intensity. This provides conventional automatic exposure control with object thickness and compensation during the exposure according to the tissue composition."
+      ],
+      [
+       "Highly Sensitive Fiber Grid Bucky Device",
+       "Highly sensitive fiber grid reduces scatters, which results in clear diagnostic images."
+      ],
+      [
+       "MICOM Compression",
+       "ELMA-T3 has comfortable compression. When the operator requires some level of pressure, MICOM control soft-touch system minimizes the discomfort of exam within the pressure range."
+      ]
+     ]
+    }
+   ],
+   "features": [
+    {
+     "label": "Advanced Features",
+     "title": "Designed with Comfort and Efficiency for Women’s Breast Care",
+     "text": [
+      "Dual control buttons are placed on both sides for vertical travel and rotation of the c-arm. Thanks to isometric motorized rotation of c-arm, breast positioning can be done comfortably and quickly. Auto-positioning function allows operator to easily adjust preset positions by touch buttons.",
+      "The digital display of the compression force that is put on the breast when taking an X-ray aids in avoiding patient discomfort due to compression force."
+     ],
+     "image": "/uploads/product_board/elma-t3_rotation.jpg"
+    },
+    {
+     "label": "Excellent Operation with Generator Built in Slim Body",
+     "title": "Compact Size : Built-in Generator",
+     "text": "Thanks to its built-in generator, neither external generator cabinet, nor extra cabling is required. Thus, it makes installation very easy and saves space.",
+     "image": "/uploads/product/elma-t3.png"
+    },
+    {
+     "label": "Excellent Operation with Generator Built in Slim Body",
+     "title": "High Frequency Inverter System",
+     "text": "With maximum tube current 100mA @ 25kV, a high-resolution image can be acquired in a short period of time, which will enable a detailed diagnosis.",
+     "image": "/uploads/product_board/elma-t3_operator.jpg"
+    },
+    {
+     "title": "Full Color Touch LCD Control Panel",
+     "text": "Using full color touch LCD control panel, a user can easily manage various data, including control setting information.",
+     "image": "/uploads/product_board/elma-t3_touch-lcd.jpg"
+    },
+    {
+     "title": "Foot Pedals",
+     "text": [
+      "Up/down movement of the compression",
+      "Auto-release compression after exposing"
+     ],
+     "image": "/uploads/product_board/elma-t3_foot-pedals.jpg"
+    }
+   ],
+   "galleries": [
+    {
+     "title": "Controls & Display",
+     "items": [
+      {
+       "title": "Dual Control Buttons On both Sides",
+       "image": "/uploads/product_board/elma-t3_dual-control.jpg"
+      },
+      {
+       "title": "Compression Parameters Display",
+       "image": "/uploads/product_board/elma-t3_compression-display.jpg"
+      },
+      {
+       "title": "Highly Sensitive Fiber Grid Bucky Device",
+       "image": "/uploads/product_board/elma-t3_bucky.jpg"
+      }
+     ]
+    }
+   ]
   }
  ]
 }

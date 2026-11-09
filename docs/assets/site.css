@@ -181,8 +181,9 @@ br.pc { display: inline; }
 .feature-row { display: grid; grid-template-columns: 1.2fr 1fr; gap: 64px; align-items: center; }
 .feature-row + .feature-row { margin-top: 72px; }
 .feature-row.is-reverse .feature-media { order: 2; }
-.feature-media { background: #fff; aspect-ratio: 16 / 10; display: flex; align-items: center; justify-content: center; padding: 6%; }
-.feature-media img { max-height: 100%; width: auto; object-fit: contain; }
+.feature-media { position: relative; background: #fff; }
+.feature-media::before { content: ""; display: block; padding-top: 62.5%; }  /* 16:10, works on older iOS too */
+.feature-media img { position: absolute; top: 6%; left: 6%; width: 88%; height: 88%; object-fit: contain; }
 .feature-copy h3 { font-size: 30px; margin-bottom: 16px; }
 .feature-copy p:not(.eyebrow) { color: var(--text); font-size: 18px; }
 .detail-board { display: flex; justify-content: center; }
