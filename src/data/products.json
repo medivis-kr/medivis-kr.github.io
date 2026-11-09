@@ -457,6 +457,17 @@
    ]
   },
   {
+   "id": 102,
+   "line": "xray",
+   "category": "Mobile",
+   "name": "M5",
+   "image": "/uploads/product/m5-coming-soon.jpg",
+   "imageBg": "#000",
+   "badge": "COMING SOON",
+   "_source": "Teaser image supplied by the user 11/10 (DK render, Gemini mark removed, text re-set in Gill Sans MT)",
+   "tagline": "The next generation mobile X-ray."
+  },
+  {
    "id": 100,
    "line": "xray",
    "category": "Mobile",
