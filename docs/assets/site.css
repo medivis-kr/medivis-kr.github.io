@@ -321,7 +321,6 @@ br.pc { display: inline; }
 .float-social a { width: 52px; height: 52px; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 6px 18px rgba(10, 26, 51, .22); transition: transform .2s, box-shadow .2s; }
 .float-social a:hover { transform: translateY(-2px); box-shadow: 0 10px 24px rgba(10, 26, 51, .28); }
 .float-social svg { width: 26px; height: 26px; fill: #fff; }
-.float-social .fs-linkedin { background: #0A66C2; }
 .float-social .fs-whatsapp { background: #25D366; }
 .float-social .fs-whatsapp svg { width: 28px; height: 28px; }
 @media (max-width: 900px) {
